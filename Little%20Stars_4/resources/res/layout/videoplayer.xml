@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" xmlns:ptr="http://schemas.android.com/apk/res/com.jxl.app.littlestars.project" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/surfaceLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tzh.ipcamera.view.SurfaceViews android:id="@+id/videoPlaySurface" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/vpscreenLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/imgVProcess_ly_play" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/y320" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/imgVProcess_play" android:background="@drawable/process_bar" android:layout_width="@dimen/y200" android:layout_height="@dimen/y200"/>
+            <TextView android:textColor="@color/color_red" android:layout_width="wrap_content" android:layout_height="@dimen/y60" android:text="连接中" android:layout_below="@+id/imgVProcess_play" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_bg_videoplayer" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/transparent" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/y60" android:textColor="@color/color_black" android:id="@+id/back" android:background="@color/transparent" android:layout_width="@dimen/y160" android:layout_height="@dimen/y80" android:layout_marginLeft="@dimen/x20" android:text="@string/camera_play_return_text" android:onClick="onClick"/>
+        <include android:id="@+id/ly_status_videoplayer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true" layout="@layout/video_status_layout"/>
+        <include android:id="@+id/ly_video_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:layout_above="@+id/ly_status_videoplayer" layout="@layout/video_time_layout"/>
+    </RelativeLayout>
+</RelativeLayout>

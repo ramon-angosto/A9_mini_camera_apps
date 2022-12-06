@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/newbg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/top" android:layout_width="match_parent" android:layout_height="50dp" style="@style/top_bg_style">
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_black" android:id="@+id/back" android:background="@drawable/btn_back_selector" android:visibility="invisible" android:layout_width="60dp" android:layout_height="40dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/main_alarm" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/listview" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#30000000" android:dividerHeight="0.01dp" android:fastScrollEnabled="true" android:fadeScrollbars="true"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:padding="5dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/loaded_linear_camer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_file_create_camer"/>
+            <object.p2pipcam.system.MyTextView android:textColor="@color/color_blue" android:ellipsize="marquee" android:id="@+id/file_camer" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="TextView" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100dp" android:minWidth="45dp" android:text="@string/video_file_name"/>
+            <object.p2pipcam.system.MyTextView android:textColor="@color/color_blue" android:ellipsize="marquee" android:id="@+id/file_name" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="TextView" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100dp" android:minWidth="45dp" android:text="@string/video_file_create_time"/>
+            <object.p2pipcam.system.MyTextView android:textColor="@color/color_blue" android:ellipsize="marquee" android:id="@+id/file_time" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="TextView" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100dp" android:minWidth="45dp" android:text="@string/video_file_size"/>
+            <object.p2pipcam.system.MyTextView android:textColor="@color/color_blue" android:ellipsize="marquee" android:id="@+id/file_size" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="TextView" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

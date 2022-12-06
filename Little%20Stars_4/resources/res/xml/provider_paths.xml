@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" xmlns:ptr="http://schemas.android.com/apk/res/com.jxl.app.littlestars.project">
+    <external-path name="files_root" path="Android/data/jxl.littlestars.project/"/>
+    <external-path name="external_storage_root" path="."/>
+</paths>

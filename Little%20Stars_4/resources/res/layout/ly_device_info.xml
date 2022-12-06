@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/bg_style">
+    <RelativeLayout android:gravity="center" android:id="@+id/top" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="@dimen/y40" android:textColor="@color/color_black" android:gravity="center_vertical" android:id="@+id/back" android:layout_width="@dimen/y160" android:layout_height="@dimen/y80" android:layout_marginLeft="@dimen/x20" android:text="@string/camera_play_return_text" android:layout_centerVertical="true" android:onClick="onClick"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_connect_device_access" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_black" android:id="@+id/done" android:background="@drawable/btnselector" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="10dp" android:maxWidth="80dp" android:minWidth="50dp" android:text="@string/done" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:textColor="@color/color_less_blue" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:text="@string/camera_device_info"/>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:id="@+id/btnNextStep" android:background="@drawable/button_click_background" android:layout_width="match_parent" android:layout_height="@dimen/x90" android:layout_marginLeft="@dimen/x36" android:layout_marginTop="@dimen/x100" android:layout_marginRight="@dimen/x36" android:text="@string/camera_connect_device_access"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/x700" android:layout_marginTop="@dimen/x100">
+        <ImageView android:layout_width="@dimen/x450" android:layout_height="@dimen/x130" android:src="@drawable/connect_device_pic" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/bg_style">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/top" android:layout_width="match_parent" android:layout_height="50dp" style="@style/top_bg_style">
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_black" android:id="@+id/back" android:background="@drawable/btn_back_selector" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="60dp" android:layout_height="40dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/remote_video_title" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/imageView1" android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/color_grey"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ExpandableListView android:id="@+id/listview" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/listitem_pressed_selector" android:cacheColorHint="#00000000" android:divider="@color/color_divider" android:dividerHeight="1dp"/>
+            <RelativeLayout android:id="@+id/floatHeaderView" android:background="#ff00aaaa" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentTop="true">
+                <ImageView android:id="@+id/header_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/arrowdown" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textColor="@color/color_black" android:id="@+id/header_tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/header_img" android:layout_centerVertical="true"/>
+                <TextView android:textColor="@color/color_black" android:id="@+id/header_tv_sum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="TextView" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="24sp" android:textColor="@color/color_white" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/no_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_video"/>
+    </FrameLayout>
+</LinearLayout>

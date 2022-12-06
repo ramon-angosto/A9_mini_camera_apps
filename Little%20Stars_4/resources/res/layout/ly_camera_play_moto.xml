@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/share_view" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/screenLandscape" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/playLandView" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/vidicon" android:scaleType="fitXY"/>
+        <ImageView android:id="@+id/btnHReturn" android:layout_width="@dimen/y60" android:layout_height="@dimen/y40" android:layout_marginLeft="@dimen/y30" android:layout_marginTop="@dimen/y50" android:src="@drawable/btn_back_normal" android:scaleType="fitXY" android:onClick="onClick"/>
+        <RelativeLayout android:id="@+id/imgVProcess_ly_full" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/y320" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/imgHProcess" android:background="@drawable/process_bar" android:layout_width="@dimen/y200" android:layout_height="@dimen/y200" android:layout_centerHorizontal="true"/>
+            <TextView android:textColor="@color/color_red" android:layout_width="wrap_content" android:layout_height="@dimen/y60" android:text="连接中" android:layout_below="@+id/imgHProcess" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="@dimen/x1180" android:layout_height="@dimen/y120" android:layout_marginBottom="@dimen/y20" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:background="@drawable/player_bottom_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/btnHFHDIcon" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:src="@drawable/hd_icon_white" android:scaleType="fitXY" android:onClick="onClick"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/btnHVoice" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:src="@drawable/sound_icon_white" android:layout_alignTop="@+id/btnHRec" android:onClick="onClick"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/btnHVoiceSpeech" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:src="@drawable/speech_icon_white" android:layout_alignTop="@+id/btnHRec" android:onClick="onClick"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/btnHSnap" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:src="@drawable/btn_snap_white_click" android:onClick="onClick"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/btnHRec" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:src="@drawable/play_record_icon_white" android:onClick="onClick"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/btnHVerticalRotate" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:src="@drawable/vertical_icon_white_selector" android:scaleType="fitXY" android:onClick="onClick"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/btnHHorizontalRotate" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:src="@drawable/horizontal_icon_white_selector" android:scaleType="fitXY" android:onClick="onClick"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/btnHInstructLightSw" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:src="@drawable/camera_instruct_light_off_white" android:onClick="onClick"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/btnHInfraLightSw" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:src="@drawable/camera_infra_light_on_white" android:onClick="onClick"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/btnHScaleIcon" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:src="@drawable/play_fullscreen_icon_white" android:scaleType="fitXY" android:onClick="onClick"/>
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/screenPortrait" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/ly_status_bar" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="@dimen/y40" android:textColor="@color/color_black" android:gravity="center_vertical" android:id="@+id/btnCameraReturn" android:layout_width="@dimen/y160" android:layout_height="@dimen/y80" android:layout_marginLeft="@dimen/x20" android:text="@string/camera_play_return_text" android:layout_centerVertical="true" android:onClick="onClick"/>
+            <TextView android:textSize="@dimen/y40" android:textStyle="bold" android:textColor="@color/color_black" android:gravity="center" android:layout_width="@dimen/y300" android:layout_height="@dimen/y80" android:text="@string/app_name" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/lyGLSurface" android:layout_width="match_parent" android:layout_height="@dimen/x960">
+            <ImageView android:id="@+id/playSurface" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/vidicon" android:scaleType="fitXY"/>
+            <RelativeLayout android:id="@+id/imgVProcess_ly" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/y320" android:layout_centerInParent="true"> &gt; 
+                <ImageView android:id="@+id/imgVProcess" android:background="@drawable/process_bar" android:layout_width="@dimen/y200" android:layout_height="@dimen/y200" android:layout_centerHorizontal="true"/>
+                <TextView android:textColor="@color/color_red" android:layout_width="wrap_content" android:layout_height="@dimen/y60" android:text="连接中" android:layout_below="@+id/imgVProcess" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/lyOperator" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/y20">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/y100" android:layout_marginTop="@dimen/y15">
+                <ImageView android:id="@+id/btnFHDIcon" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:layout_marginLeft="@dimen/x40" android:src="@drawable/hd_icon_black" android:scaleType="fitXY" android:layout_centerVertical="true" android:onClick="onClick"/>
+                <ImageView android:id="@+id/btnSoundPlay" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:layout_marginLeft="@dimen/x220" android:src="@drawable/sound_icon_black" android:scaleType="fitXY" android:layout_centerVertical="true" android:onClick="onClick"/>
+                <ImageView android:id="@+id/btnVoiceSpeech" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:layout_marginRight="@dimen/x220" android:src="@drawable/speech_icon_black" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick"/>
+                <ImageView android:id="@+id/btnScaleIcon" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:layout_marginRight="@dimen/x40" android:src="@drawable/play_fullscreen_icon_green" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/y200" android:layout_marginTop="@dimen/y15" android:layout_centerInParent="true">
+                <ImageView android:id="@+id/btnVerticalRotate" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:layout_marginLeft="@dimen/x40" android:src="@drawable/vertical_icon_black_selector" android:scaleType="fitXY" android:layout_centerVertical="true" android:onClick="onClick"/>
+                <ImageView android:visibility="invisible" android:layout_width="@dimen/y205" android:layout_height="@dimen/y200" android:src="@drawable/little_stars_logo_icon_black" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/btnHorizontalRotate" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:layout_marginRight="@dimen/x40" android:src="@drawable/horizontal_icon_black_selector" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_horizontal" android:background="@drawable/round_icon_black" android:layout_width="@dimen/y400" android:layout_height="@dimen/y400" android:layout_centerInParent="true">
+                <ImageView android:id="@+id/btnRoundLeft" android:layout_width="@dimen/y90" android:layout_height="@dimen/y135" android:layout_marginLeft="@dimen/y14" android:src="@drawable/play_left_icon_selector" android:scaleType="fitXY" android:layout_centerVertical="true" android:onClick="onClick"/>
+                <ImageView android:id="@+id/btnRoundRight" android:layout_width="@dimen/y90" android:layout_height="@dimen/y135" android:layout_marginRight="@dimen/y14" android:src="@drawable/play_right_icon_selector" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick"/>
+                <ImageView android:id="@+id/btnRoundTop" android:layout_width="@dimen/y135" android:layout_height="@dimen/y90" android:layout_marginTop="@dimen/y14" android:src="@drawable/play_top_icon_selector" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:onClick="onClick"/>
+                <ImageView android:id="@+id/btnRoundDown" android:layout_width="@dimen/y135" android:layout_height="@dimen/y90" android:layout_marginBottom="@dimen/y14" android:src="@drawable/play_down_icon_selector" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onClick"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/lyBottom" android:layout_width="match_parent" android:layout_height="@dimen/y100" android:layout_alignParentBottom="true">
+                <ImageView android:id="@+id/btnVideoRec" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:layout_marginLeft="@dimen/x40" android:src="@drawable/play_record_icon_black" android:scaleType="fitXY" android:layout_centerVertical="true" android:onClick="onClick"/>
+                <ImageView android:id="@+id/btnSnap" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:layout_marginLeft="@dimen/x220" android:src="@drawable/btn_snap_click" android:scaleType="fitXY" android:layout_centerVertical="true" android:onClick="onClick"/>
+                <ImageView android:id="@+id/btnInstructLightSw" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:layout_marginRight="@dimen/x220" android:src="@drawable/camera_instruct_light_off" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick"/>
+                <ImageView android:id="@+id/btnInfraLightSw" android:layout_width="@dimen/y100" android:layout_height="@dimen/y100" android:layout_marginRight="@dimen/x40" android:src="@drawable/camera_infra_light_on" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/lyRecArea" android:layout_width="wrap_content" android:layout_height="@dimen/y100" android:layout_marginTop="50dp">
+        <ImageView android:id="@+id/imgRecIcon" android:layout_width="@dimen/y50" android:layout_height="@dimen/y50" android:layout_marginLeft="@dimen/y10" android:layout_marginTop="@dimen/y10" android:src="@drawable/record_icon" android:scaleType="fitXY"/>
+        <ImageView android:id="@+id/imgBattery" android:layout_width="@dimen/y60" android:layout_height="@dimen/y30" android:layout_marginLeft="@dimen/y10" android:layout_marginTop="@dimen/y20" android:scaleType="fitXY" android:layout_toRightOf="@+id/imgRecIcon"/>
+        <TextView android:textColor="@color/color_red" android:id="@+id/tvCameraTime" android:layout_width="@dimen/y300" android:layout_height="@dimen/y80" android:layout_marginTop="@dimen/y10" android:layout_marginRight="@dimen/x10" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

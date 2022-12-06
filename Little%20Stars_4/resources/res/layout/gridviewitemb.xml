@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/slecter" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@+id/gridimageviewitem1" android:layout_width="match_parent" android:layout_height="120dp"/>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <object.p2pipcam.system.MyTextView android:textColor="@color/color_black" android:ellipsize="marquee" android:id="@+id/all_pic_check_grid_textView1" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+</LinearLayout>

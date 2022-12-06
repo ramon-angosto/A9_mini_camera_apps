@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" xmlns:ptr="http://schemas.android.com/apk/res/com.jxl.app.littlestars.project" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.opengl.GLSurfaceView android:layout_gravity="center" android:id="@+id/glsurfaceview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/img_playvideo" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/img_pause" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/top" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="@dimen/y40" android:textColor="@color/color_black" android:gravity="center_vertical" android:id="@+id/back" android:layout_width="@dimen/y160" android:layout_height="@dimen/y80" android:layout_marginLeft="@dimen/x20" android:text="@string/camera_play_return_text" android:layout_centerVertical="true" android:onClick="onClick"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_black" android:layout_gravity="center_vertical" android:id="@+id/takevideo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/setting" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@+id/bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="65dp" style="@style/top_bg_style">
+            <ProgressBar android:id="@+id/progressBar1" android:layout_width="match_parent" android:layout_height="5dp" android:layout_margin="5dp" android:layout_alignParentTop="true" style="?android:attr/progressBarStyleHorizontal"/>
+            <TextView android:textColor="@color/color_white" android:id="@+id/sumtime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="00:00:00" android:layout_below="@+id/progressBar1" android:layout_alignParentRight="true"/>
+            <TextView android:textColor="@color/color_white" android:id="@+id/currenttime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="00:00:00" android:layout_below="@+id/progressBar1" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="15sp" android:textColor="@color/color_white" android:id="@+id/takevideo_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="TextView" android:layout_below="@+id/currenttime" android:layout_alignParentLeft="true"/>
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/progressBar1" android:layout_centerInParent="true">
+                <Button android:id="@+id/btn_left" android:visibility="gone" android:layout_width="38dp" android:layout_height="38dp"/>
+                <Button android:id="@+id/btn_play" android:background="@drawable/video_play_play_selector" android:layout_width="40dp" android:layout_height="40dp"/>
+                <Button android:id="@+id/btn_right" android:visibility="gone" android:layout_width="38dp" android:layout_height="38dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

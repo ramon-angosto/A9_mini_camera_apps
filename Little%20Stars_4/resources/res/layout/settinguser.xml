@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" xmlns:ptr="http://schemas.android.com/apk/res/com.jxl.app.littlestars.project" android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/bg_style">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/top" android:layout_width="match_parent" android:layout_height="50dp" style="@style/top_bg_style">
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_black" android:id="@+id/user_cancel" android:background="@drawable/btn_back_selector" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="60dp" android:layout_height="40dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@+id/tv_camera_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/doorbell_setting_white" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_white" android:id="@+id/user_ok" android:background="@drawable/btnselector" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="10dp" android:maxWidth="80dp" android:minWidth="50dp" android:text="@string/doorbell_setting_user_add" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/liner_user1" android:background="@drawable/background_whitef10_corner" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16dp" android:textColor="@color/color_black" android:id="@+id/tv_user_show1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#90000000" android:id="@+id/tv_user1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#fb3902" android:id="@+id/tv_statu1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="已连接"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btn_del1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/door_white_list_del" style="@style/button_style"/>
+                    <Button android:id="@+id/btn_edit1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/door_white_list_edit" style="@style/button_style"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/liner_user2" android:background="@drawable/background_whitef10_corner" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16dp" android:textColor="@color/color_black" android:id="@+id/tv_user_show2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#90000000" android:id="@+id/tv_user2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#fb3902" android:id="@+id/tv_statu2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="已连接"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btn_del2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/door_white_list_del" style="@style/button_style"/>
+                    <Button android:id="@+id/btn_edit2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/door_white_list_edit" style="@style/button_style"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/liner_user3" android:background="@drawable/background_whitef10_corner" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16dp" android:textColor="@color/color_black" android:id="@+id/tv_user_show3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#90000000" android:id="@+id/tv_user3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#fb3902" android:id="@+id/tv_statu3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="已连接"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btn_del3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/door_white_list_del" style="@style/button_style"/>
+                    <Button android:id="@+id/btn_edit3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/door_white_list_edit" style="@style/button_style"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/liner_user4" android:background="@drawable/background_whitef10_corner" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16dp" android:textColor="@color/color_black" android:id="@+id/tv_user_show4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#90000000" android:id="@+id/tv_user4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#fb3902" android:id="@+id/tv_statu4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="已连接"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btn_del4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/door_white_list_del" style="@style/button_style"/>
+                    <Button android:id="@+id/btn_edit4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/door_white_list_edit" style="@style/button_style"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/liner_user5" android:background="@drawable/background_whitef10_corner" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16dp" android:textColor="@color/color_black" android:id="@+id/tv_user_show5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#90000000" android:id="@+id/tv_user5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#fb3902" android:id="@+id/tv_statu5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="已连接"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btn_del5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/door_white_list_del" style="@style/button_style"/>
+                    <Button android:id="@+id/btn_edit5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/door_white_list_edit" style="@style/button_style"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/liner_user6" android:background="@drawable/background_whitef10_corner" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16dp" android:textColor="@color/color_black" android:id="@+id/tv_user_show6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#90000000" android:id="@+id/tv_user6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#fb3902" android:id="@+id/tv_statu6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="已连接"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btn_del6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/door_white_list_del" style="@style/button_style"/>
+                    <Button android:id="@+id/btn_edit6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/door_white_list_edit" style="@style/button_style"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/liner_user7" android:background="@drawable/background_whitef10_corner" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16dp" android:textColor="@color/color_black" android:id="@+id/tv_user_show7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#90000000" android:id="@+id/tv_user7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#fb3902" android:id="@+id/tv_statu7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="已连接"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btn_del7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/door_white_list_del" style="@style/button_style"/>
+                    <Button android:id="@+id/btn_edit7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/door_white_list_edit" style="@style/button_style"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/liner_user8" android:background="@drawable/background_whitef10_corner" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16dp" android:textColor="@color/color_black" android:id="@+id/tv_user_show8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#90000000" android:id="@+id/tv_user8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="用户1"/>
+                    <TextView android:textSize="14dp" android:textColor="#fb3902" android:id="@+id/tv_statu8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="已连接"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btn_del8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/door_white_list_del" style="@style/button_style"/>
+                    <Button android:id="@+id/btn_edit8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/door_white_list_edit" style="@style/button_style"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

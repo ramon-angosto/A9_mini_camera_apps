@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/zoomin</item>
+        <item name="android:windowExitAnimation">@anim/zoomout</item>
+    </style>
+    <style name="MainAnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/poup_main_more_show</item>
+        <item name="android:windowExitAnimation">@anim/poup_main_more_dismiss</item>
+    </style>
+    <style name="MyCheckBox">
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:button">@drawable/checkbox_aler_selector</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+    <style name="Theme.Start">
+        <item name="android:windowBackground">@color/color_white</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="bg_style">
+        <item name="android:background">@drawable/newbg</item>
+    </style>
+    <style name="button_open_close_style">
+        <item name="android:textSize">@dimen/text_title_size</item>
+        <item name="android:textColor">@color/color_blue1</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/btnselector</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="button_style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/new_user_selector</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="dialog1">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="onekey_edit_style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textColorHint">@color/color_biz_camerastatu</item>
+        <item name="android:gravity">clip_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">30</item>
+    </style>
+    <style name="top_bg_style">
+        <item name="android:background">@color/color_all_bg</item>
+    </style>
+</resources>

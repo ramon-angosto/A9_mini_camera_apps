@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/newbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/bottom_tab" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <RelativeLayout android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/color_black" android:id="@+id/textView_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name1" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                <Button android:id="@+id/btn_menu" android:background="#00000000" android:paddingLeft="10dp" android:layout_width="40dp" android:layout_height="40dp" android:drawableLeft="@drawable/menu_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_red" android:id="@+id/btn_edit" android:background="@drawable/btnselector" android:layout_width="wrap_content" android:layout_height="35dp" android:maxWidth="80dp" android:minWidth="40dp" android:text="@string/main_edit" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="55dp" android:layout_below="@+id/bottom_tab"/>
+        <LinearLayout android:orientation="horizontal" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="60dp" android:weightSum="3" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/btnDevice" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginLeft="6dp" android:layout_marginRight="3dp" android:src="@drawable/device_icon_green" android:scaleType="fitCenter"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/btnSnapFile" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:src="@drawable/snap_icon_black" android:scaleType="fitCenter"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/btnRecordFile" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginLeft="3dp" android:layout_marginRight="6dp" android:src="@drawable/record_file_icon_black" android:scaleType="fitCenter"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:background="@color/color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="55dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_layout_vidicon" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/img_bells" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:src="@drawable/db_bell_press"/>
+                <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@+id/main_tv_vidicon" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/doorbell"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_layout_alarm" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/img_logs" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:src="@drawable/db_log_normal"/>
+                <TextView android:textColor="#95ffffff" android:id="@+id/main_tv_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_alarm"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_layout_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/img_pic" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:src="@drawable/db_pic_normal"/>
+                <TextView android:textColor="#95ffffff" android:id="@+id/main_tv_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_pic"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_layout_vid" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/img_video" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:src="@drawable/db_video_normal"/>
+                <TextView android:textColor="#95ffffff" android:id="@+id/main_tv_vid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_vid"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/about"/>
+                <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_about"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/img" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/seeone_start_logo" android:scaleType="fitXY"/>
+    </RelativeLayout>
+</FrameLayout>

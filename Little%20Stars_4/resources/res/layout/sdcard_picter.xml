@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/newbg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/top" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="@dimen/y40" android:textColor="@color/color_black" android:gravity="center_vertical" android:id="@+id/back" android:layout_width="@dimen/y160" android:layout_height="@dimen/y80" android:layout_marginLeft="@dimen/x20" android:text="@string/camera_play_return_text" android:layout_centerVertical="true" android:onClick="onClick"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_black" android:layout_gravity="center_vertical" android:id="@+id/takepic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_title_size" android:textColor="@color/color_white" android:id="@+id/picter_sum" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="0"/>
+            <ProgressBar android:id="@+id/pict_progressBar1" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="5dp" android:indeterminateDrawable="@drawable/myprogressbar"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <object.p2pipcam.gridview.PullToRefreshGridView android:gravity="fill" android:id="@+id/sdcard_gridview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:horizontalSpacing="5dp" android:verticalSpacing="5dp" android:stretchMode="columnWidth" android:columnWidth="100dp" android:numColumns="auto_fit" ptr:mode="twoLine"/>
+</LinearLayout>

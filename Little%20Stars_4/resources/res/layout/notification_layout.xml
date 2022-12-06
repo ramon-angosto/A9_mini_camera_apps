@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/top_bg_style">
+    <ImageView android:id="@+id/no_img" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/abs__spinner_ab_default_holo_light"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="@color/color_white" android:id="@+id/no_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="CameraName" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/color_white" android:id="@+id/no_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="hhh" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/color_white" android:id="@+id/no_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Content"/>
+    </LinearLayout>
+</LinearLayout>

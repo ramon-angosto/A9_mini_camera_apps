@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/bg_style">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/top" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="@dimen/y40" android:textColor="@color/color_black" android:gravity="center_vertical" android:id="@+id/back" android:layout_width="@dimen/y160" android:layout_height="@dimen/y80" android:layout_marginLeft="@dimen/x20" android:text="@string/camera_play_return_text" android:layout_centerVertical="true" android:onClick="onClick"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_black" android:layout_gravity="center_vertical" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <ListView android:id="@+id/localpic_listview" android:background="@drawable/background_whitef10_corner" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:listSelector="@drawable/listitem_bg_selector" android:cacheColorHint="#00000000"/>
+    </LinearLayout>
+    <TextView android:textSize="24sp" android:textColor="#129ae3" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/localpic_tv_nopic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/localpic_no"/>
+</FrameLayout>

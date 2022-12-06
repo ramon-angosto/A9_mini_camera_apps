@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/bg_style">
+    <RelativeLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="50dp" style="@style/top_bg_style">
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_black" android:id="@+id/back" android:background="@drawable/btn_back_selector" android:layout_width="60dp" android:layout_height="40dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@+id/tv_camera_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/alerm_log" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/listView1" android:background="#00000000" android:padding="3dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null"/>
+        <TextView android:textSize="24sp" android:textColor="#129ae3" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/no_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alerm_no_log"/>
+        <LinearLayout android:layout_gravity="bottom" android:id="@+id/alarm_bottom_layout" android:background="@drawable/main_bottom_bg" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+            <Button android:textColor="@color/color_white" android:id="@+id/aler_cancel" android:background="@drawable/add_btn_selector" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="1"/>
+            <Button android:textColor="@color/color_white" android:id="@+id/aler_ok" android:background="@drawable/add_btn_selector" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

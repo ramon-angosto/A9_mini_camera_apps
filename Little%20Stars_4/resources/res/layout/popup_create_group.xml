@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" android:background="#60000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/biz_popup_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textSize="18dp" android:textColor="@color/color_black" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/biz_add_poup_title"/>
+        <TextView android:textSize="12dp" android:textColor="@color/color_black" android:layout_gravity="center" android:id="@+id/title_show" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/biz_add_poup_show"/>
+        <EditText android:textSize="16dp" android:textColor="@color/color_black" android:id="@+id/popup_create_group_edittext" android:background="@drawable/biz_edittext_border" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:hint="@string/biz_add_edit_show" android:singleLine="true" android:maxLength="12" android:digits="QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm-0123456789" android:inputType="textPersonName">
+            <requestFocus/>
+        </EditText>
+        <EditText android:textSize="16dp" android:textColor="@color/color_black" android:id="@+id/popup_create_group_edittext_pass" android:background="@drawable/biz_edittext_border" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:hint="@string/biz_add_edit_show1" android:singleLine="true" android:maxLength="12" android:digits="QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm-0123456789" android:inputType="textPersonName"/>
+        <View android:background="#bbbbbb" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="18dp" android:textColor="@color/color_biz_blue" android:id="@+id/popup_create_group_cancel" android:background="@drawable/biz_popup_btn_left_selector" android:layout_width="0dp" android:layout_height="40dp" android:text="@string/biz_add_cancel" android:layout_weight="1"/>
+            <View android:background="#bbbbbb" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <Button android:textSize="18dp" android:textColor="@color/color_biz_blue" android:id="@+id/popup_create_group_create" android:background="@drawable/biz_popup_btn_left_selector" android:layout_width="0dp" android:layout_height="40dp" android:text="@string/biz_add_creat" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

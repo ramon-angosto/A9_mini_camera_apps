@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tzh.ipcamera.view.BasePlayer android:id="@+id/videoPlay" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/vpscreenLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_bg_videoplayer" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/transparent" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/y60" android:textColor="@color/color_black" android:id="@+id/back" android:background="@color/transparent" android:layout_width="@dimen/y160" android:layout_height="@dimen/y80" android:layout_marginLeft="@dimen/x20" android:text="@string/camera_play_return_text" android:onClick="onClick"/>
+        <ImageView android:id="@+id/btnUpload" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="@dimen/x20" android:layout_marginRight="@dimen/x20" android:src="@drawable/upload" android:layout_alignParentRight="true" android:onClick="onClick"/>
+        <include android:id="@+id/ly_status_videoplayer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true" layout="@layout/video_status_layout"/>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:layout_above="@+id/ly_status_videoplayer" layout="@layout/video_time_layout"/>
+    </RelativeLayout>
+</RelativeLayout>

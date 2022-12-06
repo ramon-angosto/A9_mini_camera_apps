@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#ededed</color>
+    <color name="black">#000000</color>
+    <color name="button_bg_no">#30ffffff</color>
+    <color name="color_all_bg">#ffe36a00</color>
+    <color name="color_bg_less_shadow">#ff888888</color>
+    <color name="color_biz_blue">#ff0079ff</color>
+    <color name="color_biz_camerastatu">#ff818181</color>
+    <color name="color_biz_fiveblue">#500079ff</color>
+    <color name="color_biz_line">#ffc9c8cd</color>
+    <color name="color_black">#ff000000</color>
+    <color name="color_blue">#ff0000ff</color>
+    <color name="color_blue1">#ff0077ff</color>
+    <color name="color_divider">#90000000</color>
+    <color name="color_grey">#88888888</color>
+    <color name="color_grid_bg">#ff0caae4</color>
+    <color name="color_less_black">#ee000000</color>
+    <color name="color_less_blue">#ff32aff6</color>
+    <color name="color_line">#ff444444</color>
+    <color name="color_mainxx">#ffe36a00</color>
+    <color name="color_ptz_blue">#ff0044aa</color>
+    <color name="color_red">#ea5145</color>
+    <color name="color_shadow">#ff333333</color>
+    <color name="color_white">#ffffffff</color>
+    <color name="gray">#c8c8c8</color>
+    <color name="lightgrey">#d3d3d3</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="zh_color_show">#90ffffff</color>
+</resources>

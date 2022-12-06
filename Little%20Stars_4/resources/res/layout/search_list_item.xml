@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" xmlns:ptr="http://schemas.android.com/apk/res/com.jxl.app.littlestars.project" android:orientation="vertical" android:background="@drawable/listitem1_pressed_selector" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_title_size" android:textColor="@color/color_black" android:id="@+id/searchDevName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DID"/>
+    <TextView android:textSize="13sp" android:textColor="#90000000" android:id="@+id/showTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DID"/>
+    <TextView android:textSize="13sp" android:textColor="#000000" android:id="@+id/searchDevID" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DID"/>
+</LinearLayout>

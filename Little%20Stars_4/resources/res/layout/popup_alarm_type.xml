@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="#95000000" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <Button android:textSize="14dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/button_type_0" android:background="@drawable/button_selector" android:layout_width="120dp" android:layout_height="40dp" android:layout_marginBottom="10dp" android:text="@string/doorbell_setting_alarm_type_0" android:singleLine="true"/>
+    <Button android:textSize="14dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/button_type_1" android:background="@drawable/button_selector" android:visibility="gone" android:layout_width="120dp" android:layout_height="40dp" android:layout_marginBottom="10dp" android:text="@string/doorbell_setting_alarm_type_1"/>
+    <Button android:textSize="14dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/button_type_2" android:background="@drawable/button_selector" android:visibility="gone" android:layout_width="120dp" android:layout_height="40dp" android:text="@string/doorbell_setting_alarm_type_2"/>
+</LinearLayout>

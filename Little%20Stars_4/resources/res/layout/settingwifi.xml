@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" xmlns:ptr="http://schemas.android.com/apk/res/com.jxl.app.littlestars.project" android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/bg_style">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/top" android:layout_width="match_parent" android:layout_height="50dp" style="@style/top_bg_style">
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_black" android:id="@+id/wifi_cancel" android:background="@drawable/btn_back_selector" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="60dp" android:layout_height="40dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@+id/tv_camera_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/setting_wifi" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_white" android:id="@+id/wifi_ok" android:background="@drawable/btnselector" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="10dp" android:maxWidth="80dp" android:minWidth="50dp" android:text="@string/done" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/linearLayout2" android:layout_below="@+id/top" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/background_whitef10_corner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/linearLayout3" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/color_black" android:gravity="center" android:id="@+id/ssid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="5dp" android:text="SSID:" android:layout_alignParentLeft="true"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/color_black" android:gravity="center" android:id="@+id/wifi_tv_name" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/ssid" android:layout_alignTop="@+id/ssid"/>
+                        <ImageView android:id="@+id/wifi_img_drop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/abs__spinner_ab_default_holo_light" android:layout_alignParentRight="true"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/color_black" android:gravity="center" android:id="@+id/wifi_tv_prompt" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <View android:background="#bcbab9" android:layout_width="match_parent" android:layout_height="0.01dp"/>
+                    <LinearLayout android:id="@+id/wifi_sigalview" android:paddingLeft="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                        <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/wifi_signal_strong"/>
+                        <TextView android:textColor="@color/color_black" android:id="@+id/wifi_tv_sigal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/connecting"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                    <TextView android:textColor="@color/color_black" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_safe"/>
+                    <TextView android:textColor="@color/color_black" android:id="@+id/wifi_tv_safe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+                <Button android:textSize="14sp" android:textColor="@color/text_color" android:gravity="center" android:id="@+id/wifi_btn_manger" android:background="@drawable/new_user_selector" android:layout_width="160dp" android:layout_height="35dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/wifi_manager"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/wifi_pwd_view" android:background="@drawable/background_whitef10_corner" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/password"/>
+                    <EditText android:textColor="@color/color_black" android:id="@+id/wifi_edit_pwd" android:background="@drawable/edit_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="128" android:layout_weight="1" android:inputType="textPassword"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageView1" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@color/color_grey"/>
+                <CheckBox android:textColor="@color/color_black" android:layout_gravity="right" android:id="@+id/wifi_cbox_show_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/showpwd"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/wep_show1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:checkedButton="@+id/rad1" android:text="@string/wifi_setting_safe"/>
+                    <RadioGroup android:orientation="horizontal" android:id="@+id/group1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RadioButton android:textColor="#000000" android:id="@+id/rb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/wifi_setting_safe_open"/>
+                        <RadioButton android:textColor="#000000" android:id="@+id/rb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_setting_safe_all"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@+id/wep_show2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/wifi_setting_pass_format"/>
+                    <RadioGroup android:orientation="horizontal" android:id="@+id/group2" android:layout_width="match_parent" android:layout_height="wrap_content" android:checkedButton="@+id/rad4">
+                        <RadioButton android:textColor="#000000" android:id="@+id/rb3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_setting_pass_format_as"/>
+                        <RadioButton android:textColor="#000000" android:id="@+id/rb4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/wifi_setting_pass_format_16"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <ListView android:id="@+id/wifi_listview" android:background="@drawable/background_whitef10_corner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/color_divider" android:dividerHeight="1dp" android:footerDividersEnabled="false"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

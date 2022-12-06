@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/alart_bg" android:background="@drawable/dialogbg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignLeft="@+id/alart_bg" android:layout_alignTop="@+id/alart_bg" android:layout_alignRight="@+id/alart_bg" android:layout_alignBottom="@+id/alart_bg">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/alart_close" android:layout_width="76px" android:layout_height="76px" android:layout_marginLeft="10px" android:src="@drawable/close_icon_poplist" android:scaleType="fitCenter" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/y40" android:textStyle="normal" android:textColor="@color/black" android:gravity="center" android:id="@+id/alart_title" android:layout_width="match_parent" android:layout_height="100px" android:text="@string/alart_title_txt" android:singleLine="true" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:background="@color/gray" android:layout_width="match_parent" android:layout_height="2px"/>
+        <TextView android:textSize="@dimen/y34" android:textStyle="normal" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/alart_content" android:layout_width="match_parent" android:layout_height="220px" android:text="@string/alart_content_txt" android:maxLines="2"/>
+        <TextView android:background="@color/gray" android:layout_width="match_parent" android:layout_height="2px"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/alart_confirm_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:textSize="@dimen/y30" android:gravity="center" android:id="@+id/alart_btn_confirm" android:background="@drawable/button_bg" android:layout_width="240px" android:layout_height="100px" android:text="@string/alart_confirm_txt" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/alart_cancel_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:textSize="@dimen/y30" android:gravity="center" android:id="@+id/alart_btn_cancel" android:background="@drawable/button_bg" android:layout_width="240px" android:layout_height="100px" android:text="@string/alart_cancel_txt" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

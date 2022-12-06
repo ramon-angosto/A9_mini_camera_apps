@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/listitem1_pressed_selector" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/imgSnapshot" android:layout_width="80dp" android:layout_height="60dp" android:layout_margin="3dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:paddingLeft="3dp" android:paddingRight="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_toRightOf="@+id/imgSnapshot" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+        <TextView android:textSize="18sp" android:textColor="@color/color_black" android:id="@+id/cameraDevName" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_status_name"/>
+            <TextView android:textSize="12sp" android:textColor="@color/color_blue" android:id="@+id/textPPPPStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3px" android:text="initialing"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/color_less_black" android:id="@+id/cameraDevID" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3px"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/linear_for" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageButton android:id="@+id/imgBtnPPPPSetting" android:background="@drawable/abackground_all_corner" android:focusable="false" android:layout_width="50dp" android:layout_height="40dp" android:layout_marginRight="5dp" android:src="@drawable/setting_btn_no" android:scaleType="center"/>
+    </LinearLayout>
+    <CheckBox android:id="@+id/alerm_check_box" android:visibility="gone" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/linear_for" android:layout_centerVertical="true" style="@style/MyCheckBox"/>
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:background="@drawable/msg_number" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="35dp" android:minHeight="35dp" android:text="12" android:layout_toLeftOf="@+id/linear_for" android:layout_centerVertical="true"/>
+</RelativeLayout>

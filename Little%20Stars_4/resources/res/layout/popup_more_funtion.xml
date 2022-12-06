@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="horizontal" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/btn_more_setting" android:background="@drawable/listitem_pressed_selector" android:paddingTop="10dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/db_alarm_p"/>
+        <Button android:textSize="14sp" android:textColor="@color/color_black" android:gravity="top|center_vertical|center_horizontal|center" android:background="#00000000" android:layout_width="100dp" android:layout_height="wrap_content" android:text="@string/biz_main_sound"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/btn_more_about" android:background="@drawable/listitem_pressed_selector" android:paddingTop="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/db_about_o"/>
+        <Button android:textSize="14sp" android:textColor="@color/color_black" android:gravity="top|center_vertical|center_horizontal|center" android:background="#00000000" android:layout_width="100dp" android:layout_height="wrap_content" android:text="@string/biz_main_out"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/btn_zhuxiao" android:background="@drawable/listitem_pressed_selector" android:paddingTop="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/db_exit_p"/>
+        <Button android:textSize="14sp" android:textColor="@color/color_black" android:gravity="top|center_vertical|center_horizontal|center" android:background="#00000000" android:layout_width="100dp" android:layout_height="wrap_content" android:text="@string/biz_main_exit"/>
+    </LinearLayout>
+</LinearLayout>

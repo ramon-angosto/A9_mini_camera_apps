@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" xmlns:ptr="http://schemas.android.com/apk/res/com.jxl.app.littlestars.project" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:layout_gravity="center" android:id="@+id/preview_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <object.p2pipcam.zxingtwodimensioncode.ViewfinderView android:id="@+id/viewfinder_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textSize="15sp" android:textStyle="bold" android:id="@+id/btn_cancel_scan" android:layout_width="230dp" android:layout_height="40dp" android:layout_marginBottom="75dp" android:text="@string/str_cancel" android:layout_alignParentBottom="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

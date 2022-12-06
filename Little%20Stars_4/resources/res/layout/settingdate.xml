@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" xmlns:ptr="http://schemas.android.com/apk/res/com.jxl.app.littlestars.project" android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/bg_style">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/top" android:layout_width="match_parent" android:layout_height="50dp" style="@style/top_bg_style">
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_black" android:id="@+id/date_cancel" android:background="@drawable/btn_back_selector" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="60dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@+id/tv_camera_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/setting_time" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_white" android:id="@+id/date_ok" android:background="@drawable/btnselector" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="10dp" android:maxWidth="80dp" android:minWidth="50dp" android:text="@string/done" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/scrollView1" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="15dp">
+                <LinearLayout android:id="@+id/linearLayout1" android:paddingLeft="5dp" android:paddingTop="10dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/color_black" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="100dp" android:layout_height="35dp" android:text="@string/date_device_time"/>
+                    <Button android:textSize="14sp" android:textColor="@color/color_black" android:ellipsize="marquee" android:id="@+id/date_tv_device_time" android:background="#00000000" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:marqueeRepeatLimit="marquee_forever"/>
+                </LinearLayout>
+                <View android:background="#bcbab9" android:layout_width="match_parent" android:layout_height="0.01dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+                <LinearLayout android:gravity="center_vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/color_black" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="100dp" android:layout_height="35dp" android:text="@string/date_device_timezone"/>
+                    <LinearLayout android:id="@+id/linearLayout3" android:background="@drawable/edit_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <EditText android:textSize="14sp" android:textColor="@color/color_black" android:id="@+id/date_edit_timezone" android:background="#00000000" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:editable="false" android:layout_weight="1" android:inputType="textEmailAddress"/>
+                        <ImageButton android:id="@+id/date_img_timezone_down" android:background="@drawable/rightdown_selector" android:layout_width="50dp" android:layout_height="25dp" android:layout_weight="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#bcbab9" android:layout_width="match_parent" android:layout_height="0.01dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+                <RelativeLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/color_black" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginRight="5dp" android:text="@string/date_ntp_server_auto_check" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/date_cbx_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="#bcbab9" android:layout_width="match_parent" android:layout_height="0.01dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/date_ntp_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/color_black" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="100dp" android:layout_height="35dp" android:text="@string/date_ntp_server"/>
+                        <LinearLayout android:background="@drawable/edit_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <EditText android:textSize="14sp" android:textColor="@color/color_black" android:id="@+id/date_edit_ntp_server" android:background="#00000000" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:editable="false" android:layout_weight="1" android:inputType="textEmailAddress"/>
+                            <ImageButton android:id="@+id/date_img_ntp_server_down" android:background="@drawable/rightdown_selector" android:layout_width="50dp" android:layout_height="25dp" android:layout_weight="1"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textSize="14sp" android:textColor="@color/color_black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/date_btn_checkout" android:background="@drawable/listitem1_pressed_selector" android:paddingLeft="5dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="5dp" android:text="@string/date_phone_time_auto_check" android:drawableRight="@drawable/biz_btn_right_selector" android:drawablePadding="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

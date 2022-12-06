@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "25388266575",
+    "firebase_url": "https://ihd-bell.firebaseio.com",
+    "project_id": "ihd-bell",
+    "storage_bucket": "ihd-bell.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25388266575:android:a4b73aee59bb2835",
+        "android_client_info": {
+          "package_name": "com.ihdbell.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25388266575-ljq3fb3ld6s9utagg4e57i7v12b82v20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq5QPBel2FiZDXo1WfzPMDfEPqv_THUmg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25388266575:android:f5f19290033a4446",
+        "android_client_info": {
+          "package_name": "shix.ihdbell.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25388266575-ljq3fb3ld6s9utagg4e57i7v12b82v20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq5QPBel2FiZDXo1WfzPMDfEPqv_THUmg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

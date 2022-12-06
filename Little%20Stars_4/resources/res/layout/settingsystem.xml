@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" xmlns:ptr="http://schemas.android.com/apk/res/com.jxl.app.littlestars.project" android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/bg_style">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/top" android:layout_width="match_parent" android:layout_height="50dp" style="@style/top_bg_style">
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_black" android:id="@+id/alerm_cancel" android:background="@drawable/btn_back_selector" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="60dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@+id/tv_camera_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/doorbell_setting_system" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_white" android:id="@+id/alerm_ok" android:background="@drawable/btnselector" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="10dp" android:maxWidth="80dp" android:minWidth="50dp" android:text="@string/done" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffff" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="@color/color_black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="@string/doorbell_setting_system_eho_show" android:singleLine="true"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/color_black" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxWidth="220dp" android:minWidth="60dp" android:checkedButton="@+id/rad1" android:text="@string/doorbell_setting_system_eho_title" android:singleLine="true"/>
+                    <RadioGroup android:orientation="vertical" android:id="@+id/group4" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RadioButton android:textSize="12sp" android:textColor="#000000" android:id="@+id/rb1_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80dp" android:text="@string/doorbell_setting_system_eho_0"/>
+                        <RadioButton android:textSize="12sp" android:textColor="#000000" android:id="@+id/rb2_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80dp" android:text="@string/doorbell_setting_system_eho_1"/>
+                        <RadioButton android:textSize="12sp" android:textColor="#000000" android:id="@+id/rb3_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80dp" android:text="@string/doorbell_setting_system_eho_2"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lView1" android:background="#ffffff" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxWidth="220dp" android:minWidth="150dp" android:checkedButton="@+id/rad1" android:text="@string/doorbell_setting_system_speak" android:singleLine="true"/>
+                    <RadioGroup android:orientation="horizontal" android:id="@+id/group2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RadioButton android:textSize="14sp" android:textColor="#000000" android:id="@+id/rb1_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80dp" android:text="@string/doorbell_setting_system_open"/>
+                        <RadioButton android:textSize="14sp" android:textColor="#000000" android:id="@+id/rb2_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:minWidth="80dp" android:text="@string/doorbell_setting_system_close"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxWidth="220dp" android:minWidth="150dp" android:checkedButton="@+id/rad1" android:text="@string/doorbell_setting_system_set" android:singleLine="true"/>
+                    <RadioGroup android:orientation="horizontal" android:id="@+id/group3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RadioButton android:textSize="14sp" android:textColor="#000000" android:id="@+id/rb1_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80dp" android:text="@string/doorbell_setting_system_open"/>
+                        <RadioButton android:textSize="14sp" android:textColor="#000000" android:id="@+id/rb2_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:minWidth="80dp" android:text="@string/doorbell_setting_system_close"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxWidth="220dp" android:minWidth="150dp" android:checkedButton="@+id/rad1" android:text="@string/cloud_title_1" android:singleLine="true"/>
+                    <RadioGroup android:orientation="horizontal" android:id="@+id/group1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RadioButton android:textSize="14sp" android:textColor="#000000" android:id="@+id/rb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80dp" android:text="@string/doorbell_setting_system_open"/>
+                        <RadioButton android:textSize="14sp" android:textColor="#000000" android:id="@+id/rb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:minWidth="80dp" android:text="@string/doorbell_setting_system_close"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_alarm_view_all" android:background="#ffffff" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <LinearLayout android:id="@+id/linearLayout1" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:maxWidth="250dp" android:minWidth="170dp" android:text="@string/doorbell_setting_system_time1" android:singleLine="true"/>
+                    <EditText android:textColor="@color/color_black" android:id="@+id/edit_time1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="10-300" android:singleLine="true" android:maxLength="3" android:digits="0123456789" android:layout_weight="1" android:inputType="number"/>
+                </LinearLayout>
+                <View android:background="#bcbab9" android:layout_width="match_parent" android:layout_height="0.01dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+                <LinearLayout android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:maxWidth="250dp" android:minWidth="170dp" android:text="@string/doorbell_setting_system_time2" android:singleLine="true"/>
+                    <EditText android:textColor="@color/color_black" android:id="@+id/edit_time2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="10-300" android:singleLine="true" android:maxLength="3" android:digits="0123456789" android:layout_weight="1" android:inputType="number"/>
+                </LinearLayout>
+                <View android:background="#bcbab9" android:layout_width="match_parent" android:layout_height="0.01dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+                <LinearLayout android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/color_black" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:maxWidth="250dp" android:minWidth="170dp" android:text="@string/doorbell_setting_system_time3" android:singleLine="true"/>
+                    <EditText android:textColor="@color/color_black" android:id="@+id/edit_time3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="10-120" android:singleLine="true" android:maxLength="3" android:digits="0123456789" android:layout_weight="1" android:inputType="number"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#30000000" android:layout_width="match_parent" android:layout_height="0.01dp" android:layout_marginTop="10dp"/>
+            <Button android:textSize="14sp" android:textColor="@color/color_black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/setting_reboot" android:background="@drawable/listitem1_pressed_selector" android:paddingLeft="5dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/doorbell_setting_reboot" android:drawableRight="@drawable/biz_btn_right_selector" android:drawablePadding="8dp"/>
+            <View android:background="#30000000" android:layout_width="match_parent" android:layout_height="0.01dp" android:layout_marginBottom="20dp"/>
+            <Button android:textSize="14sp" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/setting_reset" android:background="@drawable/listitem1_pressed_selector" android:paddingLeft="15dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/doorbell_setting_reset" android:drawableRight="@drawable/biz_btn_right_selector" android:drawablePadding="8dp"/>
+            <View android:background="#30000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.01dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

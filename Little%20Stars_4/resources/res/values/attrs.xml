@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="EdgeFlag">
+    </attr>
+    <attr name="EdgeSize" format="dimension">
+    </attr>
+    <attr name="ShadowBottom" format="reference">
+    </attr>
+    <attr name="ShadowLeft" format="reference">
+    </attr>
+    <attr name="ShadowRight" format="reference">
+    </attr>
+    <attr name="SwipeBackLayoutStyle" format="reference">
+    </attr>
+    <attr name="adapterViewBackground" format="reference|color">
+    </attr>
+    <attr name="headerBackground" format="reference|color">
+    </attr>
+    <attr name="headerTextColor" format="color">
+    </attr>
+    <attr name="max" format="integer">
+    </attr>
+    <attr name="mode">
+        <flag name="both" value="3" />
+        <flag name="pullDownFromTop" value="1" />
+        <flag name="pullUpFromBottom" value="2" />
+    </attr>
+    <attr name="rightPadding" format="dimension">
+    </attr>
+    <attr name="roundColor" format="color">
+    </attr>
+    <attr name="roundProgressColor" format="color">
+    </attr>
+    <attr name="roundWidth" format="dimension">
+    </attr>
+    <attr name="style">
+        <enum name="FILL" value="1" />
+        <enum name="STROKE" value="0" />
+    </attr>
+    <attr name="textColor" format="color">
+    </attr>
+    <attr name="textIsDisplayable" format="boolean">
+    </attr>
+    <attr name="textSize" format="dimension">
+    </attr>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto" xmlns:ptr="http://schemas.android.com/apk/res/com.jxl.app.littlestars.project" android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/bg_style">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/top" android:layout_width="match_parent" android:layout_height="50dp" style="@style/top_bg_style">
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_black" android:id="@+id/alerm_cancel" android:background="@drawable/btn_back_selector" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="60dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@+id/tv_camera_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/setting_alerm" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+        <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_white" android:id="@+id/alerm_ok" android:background="@drawable/btnselector" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="10dp" android:maxWidth="80dp" android:minWidth="50dp" android:text="@string/done" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:checkedButton="@+id/rad1" android:text="@string/doorbell_setting_alarm_statu"/>
+                <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@+id/group1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RadioButton android:textSize="14sp" android:textColor="#000000" android:id="@+id/rb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doorbell_setting_alarm_statu_open" android:layout_weight="1"/>
+                    <RadioButton android:textSize="14sp" android:textColor="#000000" android:id="@+id/rb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doorbell_setting_alarm_statu_close" android:layout_weight="1"/>
+                </RadioGroup>
+            </LinearLayout>
+            <View android:background="#bcbab9" android:layout_width="match_parent" android:layout_height="0.01dp"/>
+            <LinearLayout android:id="@+id/layout_alarm_delay" android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14dp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/doorbell_setting_alarm_delay"/>
+                <EditText android:textColor="@color/color_black" android:id="@+id/edit_alarm_delay_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:hint="1-20" android:singleLine="true" android:maxLength="3" android:digits="0123456789" android:layout_weight="1" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_alarm_view_all" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <RelativeLayout android:gravity="center_vertical" android:id="@+id/layoutr_alerm_select" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doorbell_setting_alarm_type" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <TextView android:textColor="@color/color_black" android:id="@+id/tv_alarm_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doorbell_setting_alarm_type_0"/>
+                        <ImageButton android:id="@+id/img_alarm_type_dr" android:background="@drawable/play_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rightdown_selector"/>
+                    </LinearLayout>
+                    <View android:background="#bcbab9" android:layout_width="match_parent" android:layout_height="0.01dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:id="@+id/layoutr_alerm_leve" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doorbell_setting_alarm_type_0_1" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <TextView android:textColor="@color/color_black" android:id="@+id/tv_alarm_leve" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1"/>
+                        <ImageButton android:id="@+id/image_alarm_leve_dr" android:background="@drawable/play_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rightdown_selector"/>
+                    </LinearLayout>
+                    <View android:background="#bcbab9" android:layout_width="match_parent" android:layout_height="0.01dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <View android:background="@color/color_grey" android:layout_width="match_parent" android:layout_height="0.01dp"/>
+                <LinearLayout android:orientation="horizontal" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
+                        <TextView android:textSize="14dp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/doorbell_setting_alarm_time_start"/>
+                        <TimePicker android:id="@+id/timePicker1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <View android:background="@color/color_grey" android:layout_width="0.01dp" android:layout_height="match_parent"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
+                        <TextView android:textSize="14dp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/doorbell_setting_alarm_time_end"/>
+                        <TimePicker android:id="@+id/timePicker2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/color_grey" android:layout_width="match_parent" android:layout_height="0.01dp" android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+            <Button android:textSize="16dp" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/setting_reset" android:background="@drawable/listitem1_pressed_selector" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="10dp" android:text="@string/doorbell_setting_reset" android:drawableLeft="@drawable/sd_setting" android:drawableRight="@drawable/biz_btn_right_selector" android:drawablePadding="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

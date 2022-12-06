@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object.p2pipcam.gridview.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/id_menu" android:background="#000000" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <include layout="@layout/layout_menu"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:orientation="vertical" android:background="@drawable/newbg" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:id="@+id/relayout_top" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentTop="true">
+                    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/color_black" android:id="@+id/textView_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name1" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                    <Button android:id="@+id/btn_menu" android:background="#00000000" android:paddingLeft="10dp" android:layout_width="40dp" android:layout_height="40dp" android:drawableLeft="@drawable/menu_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <Button android:textSize="@dimen/text_title_size" android:textColor="@color/color_black" android:id="@+id/btn_edit" android:background="@drawable/btnselector" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="5dp" android:maxWidth="80dp" android:minWidth="40dp" android:text="@string/main_edit" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <ImageView android:layout_gravity="bottom" android:visibility="gone" android:layout_width="60dp" android:layout_height="4dp" android:layout_marginBottom="10dp" android:src="#ff0044ff"/>
+                    <LinearLayout android:id="@+id/del_bottom_layout" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                        <Button android:textColor="#129ae3" android:id="@+id/main_selectall" android:background="@drawable/add_btn_selector" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp" android:text="@string/main_select_all" android:layout_weight="1"/>
+                        <Button android:textColor="#129ae3" android:id="@+id/main_selectreverse" android:background="@drawable/add_btn_selector" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp" android:text="@string/main_select_reverse" android:layout_weight="1"/>
+                        <Button android:textColor="#129ae3" android:id="@+id/main_delete_camera" android:background="@drawable/add_btn_selector" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/delete_camera" android:layout_weight="1"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/relayout_top">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" style="@style/top_bg_style">
+                            <ImageButton android:id="@+id/app_home" android:background="@drawable/app_select" android:focusable="false" android:visibility="gone" android:layout_width="50dp" android:layout_height="35dp" android:layout_marginLeft="8dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                            <Button android:textColor="@color/color_white" android:background="@drawable/btnselector" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="50dp" android:layout_height="35dp" android:layout_marginTop="7.5dp" android:layout_marginRight="10dp" android:text="@string/main_edit" android:layout_alignParentRight="true"/>
+                            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doorbell" android:shadowColor="@color/color_shadow" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/addvidicon_listitem" android:background="@drawable/listitem1_pressed_selector" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                                <ImageView android:background="@drawable/vidicon_add" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="13dp" android:layout_centerVertical="true"/>
+                                <TextView android:textColor="@color/color_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/main_tap_here_add_vidicon"/>
+                                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="50dp">
+                                    <ImageButton android:id="@+id/refresh" android:background="@drawable/listitem_pressed_selector" android:layout_width="60dp" android:layout_height="50dp" android:src="@drawable/refresh2"/>
+                                    <ProgressBar android:id="@+id/progressBar1" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="15dp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ListView android:id="@+id/listviewCamera" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="55dp" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#30000000" android:dividerHeight="0.01dp" android:fastScrollEnabled="true" android:fadeScrollbars="true"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/splash_img" android:background="@drawable/splash" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                    <ImageView android:orientation="vertical" android:layout_width="180dp" android:layout_height="224dp" android:src="@drawable/product"/>
+                    <TextView android:textSize="25sp" android:textColor="@color/color_grey" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="HBell"/>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textColor="@color/color_grey" android:gravity="center" android:id="@+id/tv12" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="40dp" android:text="V 1.0" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="14sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/tv11" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:layout_marginBottom="5dp" android:text="@string/splash_titel4" android:layout_above="@+id/tv12"/>
+                <TextView android:textSize="14sp" android:textColor="@color/color_white" android:gravity="center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/splash_titel3" android:layout_above="@+id/tv11"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</object.p2pipcam.gridview.SlidingMenu>

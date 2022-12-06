@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/newbg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:background="#17365d" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/textView1" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doorbell_setting" android:layout_centerHorizontal="true"/>
+        <Button android:textColor="@color/text_color_btn" android:id="@+id/btn_reset" android:background="@drawable/btn_selector" android:padding="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="@string/doorbell_reset" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView android:textColor="#90000000" android:gravity="center" android:id="@+id/tv_show" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/doorbell_check"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/imageView1" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="80dp" android:src="@drawable/log_log_1"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/l_wifi" android:background="@drawable/login_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <EditText android:id="@+id/edit_wifi" android:background="#00000000" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/doorbell_wifi" android:singleLine="true" android:maxLength="20" android:digits="QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm-0123456789"/>
+        <View android:background="#cbced2" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <EditText android:id="@+id/edit_pwd" android:background="#00000000" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/doorbell_wifi_pwd" android:singleLine="true" android:maxLength="20" android:digits="QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm-0123456789"/>
+    </LinearLayout>
+    <Button android:textColor="@color/text_color" android:layout_gravity="center_horizontal" android:id="@+id/btn_one_set" android:background="@drawable/new_user_selector" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="@string/doorbell_wifi_one_key"/>
+</LinearLayout>

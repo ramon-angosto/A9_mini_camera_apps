@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialogbg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/alart_close" android:visibility="invisible" android:layout_width="76px" android:layout_height="76px" android:layout_marginLeft="10px" android:src="@drawable/close_icon_poplist" android:scaleType="fitCenter" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/y40" android:textStyle="normal" android:textColor="@color/black" android:gravity="center" android:id="@+id/alart_title" android:layout_width="match_parent" android:layout_height="100px" android:text="@string/location_alart_title_txt" android:singleLine="true" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:background="@color/gray" android:layout_width="match_parent" android:layout_height="2px"/>
+        <TextView android:textSize="@dimen/y34" android:textStyle="normal" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/alart_content" android:padding="@dimen/x20" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/privacy_alart_content_txt" android:singleLine="false"/>
+        <TextView android:background="@color/gray" android:layout_width="match_parent" android:layout_height="2px"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <CheckBox android:layout_gravity="fill_vertical" android:id="@+id/checkButton" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <TextView android:textSize="@dimen/y25" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="top" android:id="@+id/checkButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_alart_check_txt"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/x6" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/alart_disagree_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:textSize="@dimen/y30" android:gravity="center" android:id="@+id/alart_btn_disagree" android:background="@drawable/button_bg" android:layout_width="240px" android:layout_height="100px" android:text="@string/alart_disagree_txt" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/alart_agree_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:enabled="false" android:textSize="@dimen/y30" android:gravity="center" android:id="@+id/alart_btn_agree" android:background="@drawable/button_bg" android:layout_width="wrap_content" android:layout_height="100px" android:text="@string/alart_agree_txt" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
