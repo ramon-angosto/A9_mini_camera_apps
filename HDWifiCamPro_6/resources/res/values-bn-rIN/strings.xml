@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bigo_ad_click_to_try">চেষ্টা করতে ক্লিক করবেন?</string>
+    <string name="bigo_ad_cta_default">আরো দেখুন</string>
+    <string name="bigo_ad_description_default">এখুনি ফ্রী তে পান!</string>
+    <string name="bigo_ad_lose_reward">আপনার পুরস্কার হারাবেন।</string>
+    <string name="bigo_ad_resume">আবার চালান</string>
+    <string name="bigo_ad_skip">এড়িয়ে যান</string>
+    <string name="bigo_ad_skip_video">ভিডিও বাদ দিবেন?</string>
+    <string name="bigo_ad_title_default">চমৎকার ও আকর্ষনীয়</string>
+</resources>

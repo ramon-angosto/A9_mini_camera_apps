@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/topView" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:id="@+id/Relative_top" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <com.shix.shixipc.view.MyTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@+id/textview_add_camera" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxWidth="120dp" android:text="@string/add_camera" android:scrollHorizontally="true" android:singleLine="true" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever"/>
+        <Button android:id="@+id/done" android:visibility="invisible" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_done_style"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/all_other_text_size" android:textColor="#666666" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/config_wifi_add0_show"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_add1" android:background="@drawable/listitem1_pressed_selector" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginLeft="20dp" android:layout_marginTop="30dp" android:layout_marginRight="20dp">
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="20dp" android:src="@mipmap/qh_dev"/>
+        <ImageView android:layout_width="20dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:src="@mipmap/qh_link"/>
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="8dp" android:src="@mipmap/qh_wifi"/>
+        <TextView android:textSize="@dimen/all_other_text_size" android:textColor="#666666" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="@string/add_show_config1"/>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="30dp" android:layout_height="25dp" android:layout_marginRight="8dp" android:src="@mipmap/qh_right_next"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/all_other_text_size" android:textColor="#666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/add_show_config1_show"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_add3" android:background="@drawable/listitem1_pressed_selector" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginLeft="20dp" android:layout_marginTop="30dp" android:layout_marginRight="20dp">
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="20dp" android:src="@mipmap/qh_dev"/>
+        <ImageView android:layout_width="20dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:src="@mipmap/qh_link"/>
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="8dp" android:src="@mipmap/qh_ap"/>
+        <TextView android:textSize="@dimen/all_other_text_size" android:textColor="#666666" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="@string/add_show_config3"/>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="30dp" android:layout_height="25dp" android:layout_marginRight="8dp" android:src="@mipmap/qh_right_next"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/all_other_text_size" android:textColor="#666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/add_show_config3_show"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_add2" android:background="@drawable/listitem1_pressed_selector" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginLeft="20dp" android:layout_marginTop="30dp" android:layout_marginRight="20dp">
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="20dp" android:src="@mipmap/qh_dev"/>
+        <ImageView android:layout_width="20dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:src="@mipmap/qh_link"/>
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="8dp" android:src="@mipmap/qh_add1"/>
+        <TextView android:textSize="@dimen/all_other_text_size" android:textColor="#666666" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="@string/add_show_config2"/>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="30dp" android:layout_height="25dp" android:layout_marginRight="8dp" android:src="@mipmap/qh_right_next"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/all_other_text_size" android:textColor="#666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/add_show_config2_show"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_add0" android:background="@drawable/listitem1_pressed_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginLeft="20dp" android:layout_marginTop="40dp" android:layout_marginRight="20dp">
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="20dp" android:src="@mipmap/qh_dev"/>
+        <ImageView android:layout_width="20dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:src="@mipmap/qh_link"/>
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="8dp" android:src="@mipmap/qh_wifi"/>
+        <TextView android:textSize="@dimen/all_other_text_size" android:textColor="#666666" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="@string/config_wifi_add0"/>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="30dp" android:layout_height="25dp" android:layout_marginRight="8dp" android:src="@mipmap/qh_right_next"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/tvWX" android:background="@drawable/btn_red_selector" android:layout_width="match_parent" android:layout_height="@dimen/n_blue_button_height" android:layout_marginLeft="20dp" android:layout_marginTop="50dp" android:layout_marginRight="20dp" android:layout_marginBottom="0dp" android:text="设备使用视频教程"/>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/all_other_text_size" android:textColor="#666666" android:gravity="center_vertical" android:id="@+id/tv_ver" android:layout_width="100dp" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:layout_marginBottom="30dp" android:text="V:201.0516.17"/>
+        <TextView android:textSize="@dimen/all_other_text_size" android:textColor="#666666" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tv_ys" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:layout_marginBottom="30dp" android:text="@string/heye_xy"/>
+    </LinearLayout>
+</LinearLayout>

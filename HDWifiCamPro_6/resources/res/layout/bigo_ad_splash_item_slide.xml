@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/splash_slide" android:background="@drawable/bigo_ad_slide" android:layout_width="60dp" android:layout_height="60dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>

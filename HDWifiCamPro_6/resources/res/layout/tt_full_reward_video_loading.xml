@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/tt_full_reward_video_loading" android:background="#161823" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.bytedance.sdk.openadsdk.core.widget.TTRoundRectImageView android:id="@+id/tt_loading_icon" android:layout_width="60dp" android:layout_height="60dp"/>
+        <TextView android:textSize="20dp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/tt_loading_appname" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginTop="24dp" android:maxWidth="150dp" android:singleLine="true"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp">
+            <View android:id="@+id/tt_loading_progressbar_background" android:background="@drawable/tt_ad_loading_rect" android:layout_width="206dp" android:layout_height="19dp"/>
+            <ProgressBar android:id="@+id/tt_loading_progressbar" android:layout_width="200dp" android:layout_height="13dp" android:layout_marginLeft="3dp" android:layout_marginTop="3dp" android:max="100" android:progress="1" android:progressDrawable="@drawable/tt_full_reward_loading_progress_style" style="@style/Widget.ProgressBar.Horizontal"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+            <TextView android:textSize="17dp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Loading " android:alpha="0.5"/>
+            <TextView android:textSize="17dp" android:textColor="#ffffff" android:id="@+id/tt_loading_progress_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.5"/>
+            <TextView android:textSize="17dp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" android:alpha="0.5"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/tt_ad_loading_logo" android:background="@drawable/tt_ad_logo_new" android:layout_width="32dp" android:layout_height="14dp" android:layout_marginLeft="20dp" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true" android:layout_marginStart="20dp"/>
+</RelativeLayout>

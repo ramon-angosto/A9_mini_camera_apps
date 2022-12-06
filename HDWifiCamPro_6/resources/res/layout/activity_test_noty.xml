@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/Relative_top" android:background="#00000000" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="center_vertical" android:id="@+id/tv_camera_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="在线通道通知测试" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+        <Button android:id="@+id/alerm_ok" android:visibility="gone" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_done_style"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="5dp">
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tvNext0" android:background="@drawable/btn_blue_selector" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginTop="40dp" android:text="测试获取参数"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/color_black" android:gravity="center" android:id="@+id/tv_getParms" android:layout_width="match_parent" android:layout_height="50dp" android:text="获取设备云存属性"/>
+    <TextView android:textColor="@color/color_black" android:gravity="center" android:id="@+id/tv_getCloud" android:layout_width="match_parent" android:layout_height="50dp" android:text="获取设备云存参数"/>
+    <TextView android:textColor="@color/color_black" android:gravity="center" android:id="@+id/tv_setCloud" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:text="设置设备云存参数"/>
+    <TextView android:textColor="@color/color_black" android:gravity="center" android:id="@+id/tv_delCloud" android:layout_width="match_parent" android:layout_height="50dp" android:text="删除设备云存参数"/>
+    <TextView android:textColor="@color/color_black" android:gravity="center" android:id="@+id/tv_show" android:layout_width="match_parent" android:layout_height="match_parent" android:text=""/>
+</LinearLayout>

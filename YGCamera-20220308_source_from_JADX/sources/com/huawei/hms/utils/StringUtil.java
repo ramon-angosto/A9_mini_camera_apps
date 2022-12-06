@@ -1,0 +1,45 @@
+package com.huawei.hms.utils;
+
+import java.util.regex.Pattern;
+
+public class StringUtil {
+    public static String addByteForNum(String str, int i, char c) {
+        int length = str.length();
+        if (length == i) {
+            return str;
+        }
+        if (length > i) {
+            return str.substring(length - i);
+        }
+        StringBuffer stringBuffer = new StringBuffer();
+        while (length < i) {
+            stringBuffer.append(c);
+            length++;
+        }
+        stringBuffer.append(str);
+        return stringBuffer.toString();
+    }
+
+    public static boolean checkVersion(String str) {
+        return Pattern.compile("(^([0-9]{1,2}\\.){2}[0-9]{1,2}$)|(^([0-9]{1,2}\\.){3}[0-9]{1,3}$)").matcher(str).find();
+    }
+
+    public static int convertVersion2Integer(String str) {
+        if (!checkVersion(str)) {
+            return 0;
+        }
+        String[] split = str.split("\\.");
+        if (split.length < 3) {
+            return 0;
+        }
+        int parseInt = (Integer.parseInt(split[0]) * 10000000) + (Integer.parseInt(split[1]) * 100000) + (Integer.parseInt(split[2]) * 1000);
+        return split.length == 4 ? parseInt + Integer.parseInt(split[3]) : parseInt;
+    }
+
+    public static String objDesc(Object obj) {
+        if (obj == null) {
+            return "null";
+        }
+        return obj.getClass().getName() + '@' + Integer.toHexString(obj.hashCode());
+    }
+}

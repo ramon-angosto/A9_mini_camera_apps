@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/image_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ad_content_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_bottom" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/image_logo" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="3dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

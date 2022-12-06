@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#60000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/biz_popup_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textSize="18dp" android:textColor="@color/color_black" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text=""/>
+        <TextView android:textSize="12dp" android:textColor="@color/color_black" android:layout_gravity="center" android:id="@+id/title_show" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/biz_add_poup_show"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_ssid" android:background="@drawable/biz_edittext_border" android:padding="2dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_margin="8dp" android:layout_marginTop="5dp">
+            <EditText android:textSize="16dp" android:gravity="center" android:id="@+id/popup_create_group_edittext" android:background="#00000000" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/add_camera_wifi_ssid" android:singleLine="true" android:maxLength="32" android:layout_weight="1" android:inputType="text"/>
+            <ImageView android:visibility="invisible" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/icon_psd_disable"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/biz_edittext_border" android:padding="2dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_margin="8dp">
+            <EditText android:textSize="16dp" android:gravity="center" android:id="@+id/popup_create_group_edittext_pass" android:background="#00000000" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/add_camera_wifi_pwd" android:singleLine="true" android:maxLength="32" android:layout_weight="1" android:inputType="textPassword"/>
+            <ImageView android:id="@+id/iv_psd_status" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/icon_psd_disable"/>
+        </LinearLayout>
+        <View android:background="#bbbbbb" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="18dp" android:textColor="@color/color_biz_blue" android:id="@+id/popup_create_group_cancel" android:background="@drawable/biz_popup_btn_left_selector" android:layout_width="0dp" android:layout_height="40dp" android:text="@string/biz_add_cancel" android:layout_weight="1"/>
+            <View android:background="#bbbbbb" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <Button android:textSize="18dp" android:textColor="@color/color_biz_blue" android:id="@+id/popup_create_group_create" android:background="@drawable/biz_popup_btn_left_selector" android:layout_width="0dp" android:layout_height="40dp" android:text="@string/biz_add_creat" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

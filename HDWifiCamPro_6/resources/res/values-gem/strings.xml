@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="unad_pangle_tt_ad_source">Anzeigenquelle</string>
+    <string name="unad_pangle_tt_native_banner_call">Jetzt anrufen</string>
+    <string name="unad_pangle_tt_native_banner_download">Herunterladen</string>
+    <string name="unad_pangle_tt_native_banner_view">Ansehen</string>
+</resources>

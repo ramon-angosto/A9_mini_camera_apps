@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="337">
+        <FrameLayout android:id="@+id/tt_ad_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/tt_full_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+        <include android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" layout="@layout/tt_backup_ad"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="263">
+        <com.bytedance.sdk.openadsdk.core.widget.TTRoundRectImageView android:id="@+id/tt_full_ad_icon" android:background="@android:color/transparent" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginTop="10dp" android:scaleType="fitXY"/>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tt_full_ad_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1"/>
+        <TextView android:textSize="12sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tt_full_ad_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="25dp" android:maxLines="1"/>
+        <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tt_full_ad_download" android:background="@drawable/tt_backup_btn_1" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginTop="16dp" android:text="@string/tt_video_download_apk"/>
+    </LinearLayout>
+</LinearLayout>

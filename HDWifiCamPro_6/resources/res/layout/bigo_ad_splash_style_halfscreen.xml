@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <sg.bigo.ads.api.MediaView android:id="@+id/splash_media" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <sg.bigo.ads.ad.interstitial.AdCountDownButton android:id="@+id/splash_btn_skip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginTop="20dp" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true" app:customLayout="@layout/bigo_ad_item_splash_countdown_bg"/>
+        <include layout="@layout/bigo_ad_splash_item_cta"/>
+        <include layout="@layout/bigo_ad_splash_ad_label"/>
+        <sg.bigo.ads.api.AdOptionsView android:id="@+id/splash_options" android:layout_width="16dp" android:layout_height="16dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="80dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="32dp" android:layout_marginRight="32dp" android:layout_centerInParent="true" android:layout_marginHorizontal="32dp">
+            <ImageView android:id="@+id/splash_icon" android:layout_width="32dp" android:layout_height="32dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/splash_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:fontFamily="sans-serif-medium" android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

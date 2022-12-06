@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/splash_img" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/im1x" android:layout_width="200dp" android:layout_height="200dp" android:layout_marginTop="232dp" android:src="@mipmap/logo_456" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="50sp" android:textColor="@color/color_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="YGCamera" android:layout_below="@+id/im1x" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_black" android:gravity="center" android:id="@+id/tv12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="66dp" android:text="V 2.2.211124" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_H_Main" android:gravity="center" android:id="@+id/tv13" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="6dp" android:text="2019" android:layout_above="@+id/tv12"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/Relative_top" android:background="#53dedc" android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentTop="true">
+        <Button android:id="@+id/showCancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="220dp" android:layout_height="match_parent" android:text="公众号 CyPush" android:singleLine="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/img_show" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50dp" android:layout_marginBottom="80dp" android:src="@mipmap/scan_wxshow_a" android:layout_below="@+id/Relative_top" android:layout_alignParentTop="true"/>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/tvUp" android:background="@drawable/btn_blue_selector" android:layout_width="100dp" android:layout_height="@dimen/n_blue_button_height" android:layout_marginLeft="20dp" android:text="上一步" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/tvNexts" android:background="@drawable/btn_blue_selector" android:layout_width="120dp" android:layout_height="@dimen/n_blue_button_height" android:layout_marginRight="20dp" android:text="下一步" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

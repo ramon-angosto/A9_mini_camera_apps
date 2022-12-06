@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#00000000" android:padding="15dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/background_listbg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llEqu" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_toLeftOf="@+id/ll_statue" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <TextView android:textSize="14sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/cameraDevName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="监控设备" android:maxLines="1" android:layout_centerVertical="true"/>
+            <TextView android:textSize="11sp" android:textColor="@color/color_n_status_offline" android:ellipsize="end" android:id="@+id/cameraDevID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="说的很多话的活动" android:maxLines="1" android:layout_toRightOf="@+id/cameraDevName" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_statue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="10dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/ivState" android:layout_width="5dp" android:layout_height="5dp" android:src="@drawable/cir_other"/>
+            <TextView android:textSize="12sp" android:textColor="@color/color_n_top_bg" android:id="@+id/textPPPPStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dp"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/flEqu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/llEqu">
+            <ImageView android:id="@+id/imgSnapshot" android:padding="4dp" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="@mipmap/qh_dev2" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@null" android:layout_alignParentStart="true"/>
+            <View android:background="@drawable/biz_content_bg" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_btn_play"/>
+            <TextView android:textSize="12sp" android:textColor="#ffff0000" android:id="@+id/textDeafualPwd" android:background="@drawable/background_lable_status" android:paddingLeft="10dp" android:paddingTop="2dp" android:paddingRight="10dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:text="@string/pwd_edit_show1" android:singleLine="true" android:layout_below="@+id/textPPPPStatus"/>
+        </FrameLayout>
+        <View android:id="@+id/viewLine" android:background="#90666666" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="5dp" android:layout_below="@+id/flEqu"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="5dp" android:layout_below="@+id/viewLine">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llAlarm" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_alarm" android:layout_width="@dimen/n_dev_item_img_width" android:layout_height="@dimen/n_dev_item_img_height" android:src="@mipmap/qh_view2_alarm"/>
+                <TextView android:textSize="@dimen/n_dev_item_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n_dev_item_margin_top" android:text="远程回放" android:layout_centerHorizontal="true"/>
+            </LinearLayout>
+            <View android:background="#90666666" android:layout_width="0.1dp" android:layout_height="match_parent" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_below="@+id/flEqu"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llVideo" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_video" android:layout_width="@dimen/n_dev_item_img_width" android:layout_height="@dimen/n_dev_item_img_height" android:src="@mipmap/qh_view2_video"/>
+                <TextView android:textSize="@dimen/n_dev_item_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n_dev_item_margin_top" android:text="远程回放" android:layout_centerHorizontal="true"/>
+            </LinearLayout>
+            <View android:background="#90666666" android:layout_width="0.1dp" android:layout_height="match_parent" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_below="@+id/flEqu"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llPic" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_pic" android:layout_width="@dimen/n_dev_item_img_width" android:layout_height="@dimen/n_dev_item_img_height" android:src="@mipmap/qh_view2_pic"/>
+                <TextView android:textSize="@dimen/n_dev_item_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n_dev_item_margin_top" android:text="本地录像" android:layout_below="@+id/iv_video" android:layout_centerHorizontal="true"/>
+            </LinearLayout>
+            <View android:background="#90666666" android:layout_width="0.1dp" android:layout_height="match_parent" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_below="@+id/flEqu"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llSetting" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_width="@dimen/n_dev_item_img_width" android:layout_height="@dimen/n_dev_item_img_height" android:src="@mipmap/qh_view2_set"/>
+                <TextView android:textSize="@dimen/n_dev_item_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n_dev_item_margin_top" android:text="设备设置" android:layout_below="@+id/ivSetting" android:layout_centerHorizontal="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

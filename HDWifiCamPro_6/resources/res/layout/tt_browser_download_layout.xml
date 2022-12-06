@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="16sp" android:textColor="#fff" android:id="@+id/tt_browser_download_btn" android:background="@drawable/tt_browser_download_selector" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/tt_video_download_apk"/>

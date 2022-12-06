@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/Relative_top" android:background="@color/color_H_Main" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/back" android:visibility="gone" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_centerInParent="true">
+            <Button android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/picture_phone" android:background="@mipmap/checktopleft_pressed" android:layout_width="75dp" android:layout_height="30dp" android:text="@string/main_file_photo" android:singleLine="true"/>
+            <Button android:textColor="@color/color_black" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/picture_remote" android:background="@mipmap/checkright_normal" android:layout_width="75dp" android:layout_height="30dp" android:text="@string/main_file_video" android:singleLine="true"/>
+        </LinearLayout>
+        <Button android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/ok" android:text="@string/door_white_list_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_done_style"/>
+    </RelativeLayout>
+    <com.hichip.widget.stickygridheaders.StickyGridHeadersGridView android:id="@+id/asset_grid" android:paddingBottom="50dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="2dp" android:horizontalSpacing="3dp" android:verticalSpacing="3dp" android:columnWidth="90dp" android:numColumns="auto_fit"/>
+    <LinearLayout android:gravity="center" android:id="@+id/ll_anim" android:background="#f40b45" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:textSize="20sp" android:textColor="#ffffff" android:background="#00ffffff" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="80dp" android:layout_height="match_parent" android:text="@string/delete"/>
+    </LinearLayout>
+</LinearLayout>

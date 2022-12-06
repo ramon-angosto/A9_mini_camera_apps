@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mbridge.msdk.video.dynview.widget.MBridgeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/mbridge_reward_endcard_hor_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/mbridge_native_ec_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/mbridge_iv_adbanner_bg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_above="@+id/mbridge_reward_end_card_offer_title_rl" android:layout_alignParentTop="true">
+            <com.mbridge.msdk.videocommon.view.RoundImageView android:id="@+id/mbridge_iv_adbanner" android:layout_width="wrap_content" android:layout_height="160dp" android:layout_margin="10sp" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/mbridge_iv_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/mbridge_reward_end_card_offer_title_rl" android:layout_width="match_parent" android:layout_height="80dp" android:layout_alignParentBottom="true">
+            <com.mbridge.msdk.videocommon.view.RoundImageView android:id="@+id/mbridge_iv_icon" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="20dp" android:layout_marginRight="10dp" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/mbridge_tv_apptitle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_toLeftOf="@+id/mbridge_tv_cta" android:layout_toRightOf="@+id/mbridge_iv_icon" android:layout_alignTop="@+id/mbridge_iv_icon"/>
+            <com.mbridge.msdk.video.dynview.widget.MBridgeLevelLayoutView android:gravity="center_vertical" android:id="@+id/mbridge_sv_starlevel" android:layout_width="0dp" android:layout_height="match_parent" android:layout_toLeftOf="@+id/mbridge_tv_cta" android:layout_toRightOf="@+id/mbridge_iv_icon" android:layout_below="@+id/mbridge_tv_apptitle"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/mbridge_tv_cta" android:layout_width="180dp" android:layout_height="65dp" android:layout_marginRight="35dp" android:layout_above="@+id/mbridge_iv_logo" android:layout_alignTop="@+id/mbridge_tv_apptitle" android:layout_alignParentRight="true"/>
+            <ImageView android:id="@+id/mbridge_iv_logo" android:layout_width="40dp" android:layout_height="10dp" android:layout_margin="10dp" android:src="@drawable/mbridge_reward_end_pager_logo" android:layout_alignRight="@+id/mbridge_tv_cta" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/mbridge_native_ec_controller" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/mbridge_iv_link" android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="10dp" android:src="@drawable/mbridge_reward_notice"/>
+        <com.mbridge.msdk.widget.FeedBackButton android:textSize="11sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/mbridge_native_endcard_feed_btn" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="25dp" android:text="@string/mbridge_cm_feedback_btn_text" android:layout_alignTop="@+id/mbridge_iv_link" android:layout_toEndOf="@+id/mbridge_iv_link"/>
+        <ImageView android:id="@+id/mbridge_iv_close" android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="10dp" android:src="@drawable/mbridge_reward_close" android:layout_alignParentRight="true" android:contentDescription="closeButton"/>
+    </RelativeLayout>
+</com.mbridge.msdk.video.dynview.widget.MBridgeRelativeLayout>

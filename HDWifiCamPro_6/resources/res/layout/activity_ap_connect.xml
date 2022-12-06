@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/Relative_top" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentTop="true">
+        <Button android:id="@+id/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_camera_setting" android:layout_width="220dp" android:layout_height="match_parent" android:text="@string/n_apconnect_2title" android:singleLine="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/img_mode_show" android:layout_width="300dp" android:layout_height="175dp" android:layout_marginBottom="10dp" android:src="@mipmap/qh_apwifi_show"/>
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_qh_bom_normal" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/n_apconnect_1show"/>
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_qh_bom_normal" android:gravity="center" android:id="@+id/tv_show1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/n_apconnect_2show"/>
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_red" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/n_apconnect_2show1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/color_qh_bom_normal" android:gravity="center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_red" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/n_ap_config_title3"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_red" android:gravity="center" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="90dp" android:layout_marginTop="5dp" android:text="@string/n_ap_config_title3"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="80dp" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/tvNext" android:background="@drawable/btn_blue_selector" android:layout_width="match_parent" android:layout_height="@dimen/n_blue_button_height" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="15dp" android:text="@string/ap_next" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

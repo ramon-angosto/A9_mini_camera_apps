@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/tt_interact_splash_brush_fl" android:background="@drawable/tt_interact_round_rect" android:layout_width="300dp" android:layout_height="60dp">
+        <com.bytedance.sdk.component.adexpress.widget.BrushMaskView android:id="@+id/tt_interact_splash_brush_mask_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/tt_interact_splash_first_step_image" android:background="@drawable/tt_interact_round_rect" android:layout_width="150dp" android:layout_height="30dp" android:layout_marginLeft="40dp" android:layout_marginTop="30dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tt_splash_brush_mask_title"/>
+                <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@+id/tt_interact_splash_brush_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/tt_splash_brush_mask_hint" android:layout_centerHorizontal="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/tt_interact_splash_brush_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="30dp">
+        <ImageView android:id="@+id/image_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tt_splash_hand3"/>
+    </RelativeLayout>
+</RelativeLayout>

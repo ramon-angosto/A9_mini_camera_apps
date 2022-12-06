@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/wave_container" android:layout_width="match_parent" android:layout_height="60dp">
+        <View android:id="@+id/wave1" android:background="@drawable/tt_ad_landing_loading_three_left" android:layout_width="17dp" android:layout_height="35dp" android:layout_marginRight="-1.5dp"/>
+        <View android:id="@+id/wave2" android:background="@drawable/tt_ad_landing_loading_three_mid" android:layout_width="17dp" android:layout_height="35dp" android:layout_marginRight="-1.5dp"/>
+        <View android:id="@+id/wave3" android:background="@drawable/tt_ad_landing_loading_three_mid" android:layout_width="17dp" android:layout_height="35dp"/>
+        <View android:id="@+id/wave4" android:background="@drawable/tt_ad_landing_loading_three_mid" android:layout_width="17dp" android:layout_height="35dp" android:layout_marginLeft="-1.5dp"/>
+        <View android:id="@+id/wave5" android:background="@drawable/tt_ad_landing_loading_three_right" android:layout_width="17dp" android:layout_height="35dp" android:layout_marginLeft="-1.5dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="14dp" android:textColor="#80161823" android:gravity="center" android:layout_gravity="center" android:id="@+id/tt_loading_tip" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tt_loading_language"/>
+    </LinearLayout>
+</LinearLayout>

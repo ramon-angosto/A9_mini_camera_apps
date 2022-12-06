@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:background="@drawable/bigo_ad_arrow_right" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginEnd="16dp"/>

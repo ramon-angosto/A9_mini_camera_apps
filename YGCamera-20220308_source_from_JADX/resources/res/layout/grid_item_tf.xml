@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.shix.shixipc.view.RoundAngleImageView android:id="@+id/grid_item" android:layout_width="match_parent" android:layout_height="75dp" android:layout_marginLeft="8dp" android:layout_marginRight="6dp" android:src="@mipmap/shixpic" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:roundHeight1="3dp" app:roundWidth1="3dp"/>
+    <CheckBox android:gravity="center" android:id="@+id/grid_cb" android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_pw_checkbox" android:layout_alignRight="@+id/grid_item"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/img_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_btn_play" android:layout_centerInParent="true"/>
+    <TextView android:textColor="#000000" android:gravity="center" android:id="@+id/tv_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="10:00" android:layout_below="@+id/grid_item"/>
+</RelativeLayout>

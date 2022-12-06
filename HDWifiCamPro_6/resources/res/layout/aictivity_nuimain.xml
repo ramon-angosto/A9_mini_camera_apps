@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/topView" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:id="@+id/bottom_tab" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="55dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_layout_vidicon" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/main_img_vidicon" android:layout_width="25dp" android:layout_height="25dp" android:src="@mipmap/qh_camera_press"/>
+                    <TextView android:textColor="@color/color_main" android:gravity="center" android:id="@+id/main_tv_vidicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_vidicon"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_layout_pic" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/main_img_picture" android:layout_width="25dp" android:layout_height="25dp" android:src="@mipmap/qh_pic_normal"/>
+                    <TextView android:id="@+id/main_tv_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_pic"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_layout_vid" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/main_img_vid" android:layout_width="25dp" android:layout_height="25dp" android:src="@mipmap/qh_video_normal"/>
+                    <TextView android:id="@+id/main_tv_vid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_vid"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_layout_alarm" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/main_img_alarm" android:layout_width="25dp" android:layout_height="25dp" android:src="@mipmap/qh_alarm_normal"/>
+                    <TextView android:id="@+id/main_tv_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_alarm"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_layout_about" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/main_img_about" android:layout_width="25dp" android:layout_height="25dp"/>
+                    <TextView android:id="@+id/main_tv_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_about"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_tab" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/splash_img" android:background="@mipmap/qh_splash" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/im1x" android:layout_width="180dp" android:layout_height="180dp" android:layout_marginTop="100dp" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="50sp" android:gravity="center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="IKBELL" android:layout_below="@+id/im1x" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="25sp" android:textColor="#90ffffff" android:gravity="center" android:id="@+id/tv12" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="40dp" android:text="V 1.0" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

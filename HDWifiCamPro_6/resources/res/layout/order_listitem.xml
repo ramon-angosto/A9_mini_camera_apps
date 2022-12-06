@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/topView" android:fitsSystemWindows="true" android:clipToPadding="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/cameralistrootview" android:background="@drawable/listitem3_pressed_selector" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="@dimen/all_item_itemheight" android:layout_marginLeft="@dimen/all_item_margleftright" android:layout_marginTop="@dimen/all_item_margtop" android:layout_marginRight="@dimen/all_item_margleftright">
+        <View android:background="#40ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.01dp" android:layout_alignParentTop="true"/>
+        <com.shix.shixipc.view.RoundAngleImageView android:id="@+id/imgSnapshot" android:layout_width="80dp" android:layout_height="60dp" android:layout_marginLeft="8dp" android:layout_marginRight="6dp" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:roundHeight1="3dp" app:roundWidth1="3dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="3dp" android:paddingRight="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/imgSnapshot" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+            <TextView android:textSize="14sp" android:textColor="#000000" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="HDCAM"/>
+            <TextView android:textSize="12sp" android:textColor="@color/color_qh_bom_normal" android:id="@+id/tv_did" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3px" android:layout_marginTop="3dp" android:text="AAAAAAAAAAAAAAAAAA"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                <TextView android:textSize="12sp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_status_name"/>
+                <TextView android:textSize="12sp" android:textColor="@color/color_qh_bom_normal" android:id="@+id/tv_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="initialing"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="30dp" android:layout_height="25dp" android:layout_marginRight="8dp" android:src="@mipmap/qh_right_next" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

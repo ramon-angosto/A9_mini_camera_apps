@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/tt_main_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tt_layout_image_group" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/tt_group_image1" android:layout_width="0dp" android:layout_height="100dp" android:layout_marginRight="5dp" android:scaleType="centerCrop" android:layout_weight="1" android:layout_marginEnd="5dp"/>
+        <ImageView android:id="@+id/tt_group_image2" android:layout_width="0dp" android:layout_height="100dp" android:layout_marginRight="5dp" android:scaleType="centerCrop" android:layout_weight="1" android:layout_marginEnd="5dp"/>
+        <ImageView android:id="@+id/tt_group_image3" android:layout_width="0dp" android:layout_height="100dp" android:scaleType="centerCrop" android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>

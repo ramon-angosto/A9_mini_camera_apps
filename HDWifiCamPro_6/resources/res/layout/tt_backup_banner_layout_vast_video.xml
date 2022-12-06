@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.sdk.openadsdk.core.widget.RatioFrameLayout android:layout_gravity="center" android:id="@+id/ratio_frame_layout" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    <com.bytedance.sdk.openadsdk.core.widget.ShadowImageView android:gravity="center" android:id="@+id/tt_banner_mute" android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="5dp" android:src="@drawable/tt_mute" android:scaleType="center"/>
+    <com.bytedance.sdk.openadsdk.core.widget.ShadowImageView android:layout_gravity="right" android:id="@+id/tt_bu_close" android:padding="3dp" android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="7dp" android:src="@drawable/tt_pangle_ad_close_drawable" android:scaleType="fitCenter"/>
+    <include android:layout_gravity="bottom" android:id="@+id/tt_backup_logoLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" layout="@layout/tt_backup_ad_round_top_right"/>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.shix.shixipc.gridview.MyImageView android:id="@+id/grid_item" android:layout_width="match_parent" android:layout_height="75dp" android:scaleType="fitXY"/>
+    <CheckBox android:gravity="center" android:id="@+id/grid_cb" android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_pw_checkbox" android:layout_alignRight="@+id/grid_item"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/img_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_btn_play" android:layout_centerInParent="true"/>
+</RelativeLayout>

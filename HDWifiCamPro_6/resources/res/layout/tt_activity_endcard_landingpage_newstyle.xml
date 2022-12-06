@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/tt_browser_new_title_bar"/>
+    <com.bytedance.sdk.component.widget.SSWebView android:id="@+id/tt_browser_webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tt_title_bar" android:layout_alignParentBottom="true"/>
+    <include layout="@layout/tt_browser_new_bottom_bar"/>
+</RelativeLayout>

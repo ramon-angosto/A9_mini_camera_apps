@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/pangle_banner_root_view" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/tt_pangle_ad_image_layout" android:layout_width="135dp" android:layout_height="75dp">
+        <ImageView android:id="@+id/tt_pangle_ad_main_img" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_alignParentBottom="true"/>
+        <TextView android:id="@+id/tt_pangle_ad_logo" android:background="@drawable/tt_ad_logo_new" android:layout_width="32dp" android:layout_height="14dp" android:layout_marginLeft="3dp" android:layout_marginBottom="3dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_marginStart="3dp" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/tt_pangle_ad_content_layout" android:layout_width="165dp" android:layout_height="75dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="12sp" android:textColor="#3e3e3e" android:ellipsize="end" android:id="@+id/tt_pangle_ad_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:text="Pangle Ad" android:maxLines="1"/>
+            <TextView android:textSize="11sp" android:textColor="#aeaeae" android:ellipsize="end" android:gravity="center" android:id="@+id/tt_pangle_ad_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="5dp" android:layout_marginRight="12dp" android:text="Pangle Ad" android:maxLines="2"/>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/tt_pangle_ad_close_layout" android:visibility="gone" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginTop="7dp" android:layout_marginRight="7dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="7dp" android:layout_alignParentEnd="true">
+            <ImageView android:id="@+id/tt_video_ad_close" android:layout_width="8dp" android:layout_height="8dp" android:src="@drawable/tt_pangle_close_icon"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

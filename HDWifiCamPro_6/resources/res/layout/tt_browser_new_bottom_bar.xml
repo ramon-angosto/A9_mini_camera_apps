@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/tt_bottom_bar" android:background="#ffffff" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="44.5dp" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+    <View android:background="#1f161823" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:id="@+id/tt_bottom_bar_back" android:paddingLeft="14.75dp" android:paddingTop="12.5dp" android:paddingRight="14.75dp" android:paddingBottom="12.5dp" android:focusable="true" android:clickable="true" android:layout_width="40dp" android:layout_height="44dp" android:layout_marginLeft="16dp" android:src="@drawable/tt_ad_arrow_backward" android:layout_marginStart="16dp"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/tt_bottom_bar_forward" android:paddingLeft="14.75dp" android:paddingTop="12.5dp" android:paddingRight="14.75dp" android:paddingBottom="12.5dp" android:focusable="true" android:clickable="true" android:layout_width="40dp" android:layout_height="44dp" android:layout_marginLeft="8dp" android:src="@drawable/tt_ad_arrow_forward" android:layout_marginStart="8dp"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/tt_bottom_bar_refresh" android:paddingLeft="10dp" android:paddingTop="12dp" android:paddingRight="10dp" android:paddingBottom="12dp" android:focusable="true" android:clickable="true" android:layout_width="40dp" android:layout_height="44dp" android:layout_marginLeft="8dp" android:src="@drawable/tt_ad_refresh" android:layout_marginStart="8dp"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/tt_bottom_bar_go_to_browser" android:paddingLeft="9dp" android:paddingTop="11dp" android:paddingRight="9dp" android:paddingBottom="11dp" android:layout_width="40dp" android:layout_height="44dp" android:layout_marginRight="16dp" android:src="@drawable/tt_ad_link" android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/all_bg" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/Relative_top" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/date_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <com.shix.shixipc.view.MyTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@+id/tv_alarm_event" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxWidth="150dp" android:text="@string/main_four" android:scrollHorizontally="true" android:singleLine="true" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever"/>
+        <Button android:textSize="30sp" android:textColor="@color/color_white" android:id="@+id/button_cut" android:background="@drawable/btnselector" android:visibility="gone" android:layout_width="60dp" android:layout_height="50dp" android:text="4+" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linear" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/Linear_mid_four" android:padding="1dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear_four_one" android:layout_width="match_parent" android:layout_height="130dp">
+                <FrameLayout android:id="@+id/frame1" android:background="@color/color_qh_bom_normal" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginRight="2dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView1" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/camer_ico" android:scaleType="fitXY"/>
+                    <TextView android:textColor="#eb4819" android:id="@+id/textView1_ssid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+                    <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@+id/imagebutton1" android:background="@mipmap/video_add" android:layout_width="70dp" android:layout_height="70dp"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frame2" android:background="@color/color_qh_bom_normal" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginRight="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView2" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/camer_ico" android:scaleType="fitXY"/>
+                    <TextView android:textColor="#eb4819" android:id="@+id/textView2_ssid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+                    <ImageButton android:layout_gravity="right" android:id="@+id/imagebutton_hind" android:background="#00000000" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:src="@mipmap/hind_buttong_bg"/>
+                    <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@+id/imagebutton2" android:background="@mipmap/video_add" android:layout_width="70dp" android:layout_height="70dp"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear_four_two" android:layout_width="match_parent" android:layout_height="130dp">
+                <FrameLayout android:id="@+id/frame3" android:background="@color/color_qh_bom_normal" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:layout_marginRight="2dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView3" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/camer_ico" android:scaleType="fitXY"/>
+                    <TextView android:textColor="#eb4819" android:id="@+id/textView3_ssid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+                    <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@+id/imagebutton3" android:background="@mipmap/video_add" android:layout_width="70dp" android:layout_height="70dp"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frame4" android:background="@color/color_qh_bom_normal" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView4" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/camer_ico" android:scaleType="fitXY"/>
+                    <TextView android:textColor="#eb4819" android:id="@+id/textView4_ssid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+                    <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@+id/imagebutton4" android:background="@mipmap/video_add" android:layout_width="70dp" android:layout_height="70dp"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="10sp" android:textColor="@color/color_qh_addtxt" android:gravity="center" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/four_play_show"/>
+    </LinearLayout>
+    <View android:background="#000000" android:visibility="gone" android:layout_width="1dp" android:layout_height="match_parent"/>
+    <ListView android:id="@+id/listviewCamera" android:background="#00000000" android:visibility="gone" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/listitem2_pressed_selector" android:cacheColorHint="#00000000" android:divider="@color/color_divider" android:dividerHeight="1dp" android:layout_weight="8" android:fastScrollEnabled="true" android:fadeScrollbars="true"/>
+</LinearLayout>

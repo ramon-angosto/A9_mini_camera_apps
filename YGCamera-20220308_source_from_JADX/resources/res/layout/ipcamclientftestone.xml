@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/ipcammain" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="11">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2" android:layout_weight="3">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2" android:layout_weight="1">
+            <FrameLayout android:id="@+id/frame1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView1" android:background="@drawable/bg_border1" android:padding="1dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/camer_ico" android:scaleType="fitXY"/>
+                <TextView android:textColor="#eb4819" android:id="@+id/textView1_ssid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/connection_show1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ProgressBar android:id="@+id/progressBar1" android:layout_width="40dp" android:layout_height="40dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connecting"/>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView4" android:background="@drawable/bg_border1" android:padding="1dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/camer_ico" android:scaleType="fitXY"/>
+                <TextView android:textColor="#eb4819" android:id="@+id/textView4_ssid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/connection_show4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ProgressBar android:layout_width="40dp" android:layout_height="40dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connecting"/>
+                </LinearLayout>
+                <ImageButton android:layout_gravity="right" android:id="@+id/imagebutton_hind" android:background="#00000000" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/hind_buttong_bg"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/linear" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2" android:layout_weight="1">
+            <FrameLayout android:id="@+id/frame3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView3" android:background="@drawable/bg_border1" android:padding="1dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/camer_ico" android:scaleType="fitXY"/>
+                <TextView android:textColor="#eb4819" android:id="@+id/textView3_ssid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/connection_show3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ProgressBar android:layout_width="40dp" android:layout_height="40dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connecting"/>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView2" android:background="@drawable/bg_border1" android:padding="1dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/camer_ico" android:scaleType="fitXY"/>
+                <TextView android:textColor="#eb4819" android:id="@+id/textView2_ssid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/connection_show2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ProgressBar android:layout_width="40dp" android:layout_height="40dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connecting"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#000000" android:layout_width="1dp" android:layout_height="match_parent"/>
+    <ListView android:id="@+id/listviewCamera" android:background="#00000000" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@drawable/listitem1_pressed_selector" android:cacheColorHint="#00000000" android:divider="@color/color_divider" android:dividerHeight="1dp" android:layout_weight="8" android:fastScrollEnabled="true" android:fadeScrollbars="true"/>
+</LinearLayout>

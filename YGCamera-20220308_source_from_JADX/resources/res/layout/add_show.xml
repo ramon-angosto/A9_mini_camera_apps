@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/topView" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:id="@+id/Relative_top" android:background="@color/color_H_Main" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <com.shix.shixipc.view.MyTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_black" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@+id/textview_add_camera" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxWidth="120dp" android:text="@string/add_camera" android:scrollHorizontally="true" android:singleLine="true" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever"/>
+        <Button android:id="@+id/done" android:visibility="invisible" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_done_style"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_add1" android:background="@drawable/listitem1_pressed_selector" android:layout_width="match_parent" android:layout_height="115dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:src="@mipmap/hz_config_icon_1" android:tint="@color/color_black"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="30dp">
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_H_Main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/hz_config_ap"/>
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_qh_bom_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/hz_config_ap_show"/>
+            <ImageView android:background="@mipmap/hz_config1" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_add2" android:background="@drawable/listitem1_pressed_selector" android:layout_width="match_parent" android:layout_height="115dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:src="@mipmap/hz_config_icon_2" android:tint="@color/color_black"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="30dp">
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_H_Main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/hz_config_er"/>
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_qh_bom_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/hz_config_er_show"/>
+            <ImageView android:background="@mipmap/hz_config2" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_add3" android:background="@drawable/listitem1_pressed_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="115dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:src="@mipmap/hz_config_icon_3"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="30dp">
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_H_Main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/hz_config_smart"/>
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_qh_bom_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/hz_config_smart_show"/>
+            <ImageView android:background="@mipmap/hz_config3" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_add4" android:background="@drawable/listitem1_pressed_selector" android:layout_width="match_parent" android:layout_height="115dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:src="@mipmap/hz_config_icon_4" android:tint="@color/color_black"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="30dp">
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_H_Main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/hz_config_online"/>
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_qh_bom_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/hz_config_online_show"/>
+            <ImageView android:background="@mipmap/hz_config4" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_add5" android:background="@drawable/listitem1_pressed_selector" android:layout_width="match_parent" android:layout_height="115dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:src="@mipmap/hz_config_icon_5" android:tint="@color/color_black"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="30dp">
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_H_Main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/hz_config_4g"/>
+            <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_qh_bom_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/hz_config_4g_show"/>
+            <ImageView android:background="@mipmap/hz_config5" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/all_other_text_size" android:textColor="#666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:layout_marginBottom="30dp" android:text="V:191.1123.01"/>
+    </LinearLayout>
+</LinearLayout>

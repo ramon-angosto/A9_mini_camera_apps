@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/tt_full_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.bytedance.sdk.openadsdk.component.reward.view.RatioImageView android:id="@+id/tt_ratio_image_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+        <TextView android:id="@+id/tt_ad_logo" android:background="@drawable/tt_ad_logo_new" android:paddingLeft="2dp" android:layout_width="32dp" android:layout_height="14dp" android:layout_alignBottom="@+id/tt_ratio_image_view" android:paddingStart="2dp"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+        <com.bytedance.sdk.openadsdk.core.widget.TTRoundRectImageView android:id="@+id/tt_full_ad_icon" android:background="@android:color/transparent" android:layout_width="80dp" android:layout_height="80dp"/>
+        <TextView android:textSize="20sp" android:textColor="@color/tt_white" android:ellipsize="end" android:id="@+id/tt_full_ad_app_name" android:layout_width="wrap_content" android:layout_height="28dp" android:maxWidth="180dp" android:text="THE APP NAME" android:singleLine="true"/>
+        <TextView android:textSize="20sp" android:textColor="@color/tt_white" android:gravity="center" android:id="@+id/tt_full_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="20dp" android:layout_marginRight="40dp"/>
+        <TextView android:textSize="14sp" android:textColor="#ff93959a" android:ellipsize="end" android:id="@+id/tt_full_comment" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginTop="50dp" android:text="@string/tt_comment_num_backup" android:singleLine="true"/>
+        <com.bytedance.sdk.openadsdk.core.widget.TTRatingBar2 android:layout_gravity="center" android:id="@+id/tt_full_rb_score" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginTop="12dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/tt_white" android:gravity="center" android:id="@+id/tt_full_ad_download" android:background="@drawable/tt_reward_video_download_btn_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="40dp" android:layout_marginTop="30dp" android:layout_marginRight="40dp" android:text="@string/tt_video_download_apk"/>
+    </LinearLayout>
+</LinearLayout>

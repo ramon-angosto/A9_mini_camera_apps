@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/Relative_top" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentTop="true">
+        <Button android:id="@+id/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_camera_setting" android:layout_width="220dp" android:layout_height="match_parent" android:text="@string/file_download" android:singleLine="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@+id/tvtop" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/file_download_album"/>
+        <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@+id/tv_show" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/tvtop"/>
+    </RelativeLayout>
+</LinearLayout>

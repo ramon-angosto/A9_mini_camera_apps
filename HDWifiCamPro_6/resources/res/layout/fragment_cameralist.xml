@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/topView" android:background="@mipmap/qh_allbg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="bottom" android:id="@+id/main_img_bottom_line" android:visibility="gone" android:layout_width="60dp" android:layout_height="4dp" android:layout_marginBottom="10dp" android:src="#ff0044ff"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/top_relativeLayout" android:layout_width="match_parent" android:layout_height="50dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageButton android:id="@+id/imbtn_four" android:background="@drawable/listitem2_pressed_selector" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="10dp" android:src="@mipmap/qh_four"/>
+            <ImageButton android:id="@+id/imbtn_view" android:background="@drawable/listitem2_pressed_selector" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="5dp" android:src="@mipmap/qh_view1"/>
+        </LinearLayout>
+        <com.shix.shixipc.view.MyTextView android:textSize="@dimen/all_text_title_size" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@+id/toptitle" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:maxWidth="160dp" android:text="@string/app_name" android:scrollHorizontally="true" android:singleLine="true" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageButton android:id="@+id/imbtn_ser" android:background="@drawable/listitem2_pressed_selector" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="10dp" android:src="@mipmap/qh_sr"/>
+            <ImageButton android:id="@+id/imbtn_add" android:background="@drawable/listitem2_pressed_selector" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="5dp" android:src="@mipmap/qh_viewadd"/>
+        </LinearLayout>
+        <Button android:id="@+id/main_edit" android:paddingLeft="10dp" android:paddingRight="10dp" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginTop="7.5dp" android:layout_marginRight="10dp" android:maxWidth="80dp" android:text="@string/main_edit" android:singleLine="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/listviewCamera" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0dp" android:layout_below="@+id/top_relativeLayout" android:fastScrollEnabled="true" android:fadeScrollbars="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layoutAdd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <Button android:id="@+id/buttonAdd" android:background="@drawable/button_add_selector" android:layout_width="130dp" android:layout_height="130dp"/>
+        <TextView android:textColor="@color/color_qh_addtxt" android:id="@+id/textViewShow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_tap_here_add_vidicon"/>
+    </LinearLayout>
+</RelativeLayout>

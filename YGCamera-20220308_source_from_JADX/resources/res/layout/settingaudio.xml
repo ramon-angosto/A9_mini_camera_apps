@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/topView" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/Relative_top" android:background="@color/color_H_Main" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/alerm_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_black" android:layout_gravity="center_vertical" android:id="@+id/tv_camera_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/dev_audio_setting" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true"/>
+        <Button android:id="@+id/alerm_ok" android:visibility="gone" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_done_style"/>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/Relative_top">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/background_listbg" android:paddingLeft="@dimen/all_item_setpadding" android:layout_width="match_parent" android:layout_height="@dimen/all_item_setheight" android:layout_marginLeft="@dimen/all_item_margleftright" android:layout_marginTop="30dp" android:layout_marginRight="@dimen/all_item_margleftright">
+                <TextView android:textSize="@dimen/all_other_text_size" android:textColor="@color/color_qh_bom_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:minWidth="140dp" android:checkedButton="@+id/rad1" android:text="@string/dev_audio_show" android:layout_centerVertical="true"/>
+                <com.shix.shixipc.view.SwitchView android:id="@+id/sw1" android:layout_width="@dimen/switch_width" android:layout_height="@dimen/switch_height" android:layout_marginRight="@dimen/all_item_margleftright" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

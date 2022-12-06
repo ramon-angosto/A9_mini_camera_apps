@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="#9985d2d1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:id="@+id/textView1_did" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView"/>
+    <Button android:textSize="18dp" android:textColor="#ffffff" android:id="@+id/add_check_phone" android:background="@drawable/listitem2_pressed_selector" android:padding="8dp" android:layout_width="110dp" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="@string/play_four_disconnection" android:singleLine="true"/>
+    <Button android:textSize="18dp" android:textColor="#ffffff" android:id="@+id/add_check_load" android:background="@drawable/listitem2_pressed_selector" android:padding="8dp" android:layout_width="110dp" android:layout_height="wrap_content" android:text="@string/four_play_pause" android:singleLine="true"/>
+</LinearLayout>

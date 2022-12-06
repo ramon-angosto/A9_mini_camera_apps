@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/icon_source_layout" layout="@layout/unad_new_api_listitem_pangle_feedad_icon_source_layout"/>
+    <TextView android:textSize="18sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/tv_listitem_ad_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="3dp" android:layout_marginRight="10dp" android:layout_marginBottom="3dp" android:text="pangle" android:maxLines="2" android:singleLine="false" android:layout_below="@+id/icon_source_layout" android:lineSpacingMultiplier="1"/>
+    <FrameLayout android:id="@+id/iv_listitem_video" android:layout_width="match_parent" android:layout_height="240dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:scaleType="centerCrop" android:layout_below="@+id/tv_listitem_ad_desc"/>
+    <include android:id="@+id/ad_title_creative_btn_layout" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_below="@+id/iv_listitem_video" layout="@layout/unad_new_listitem_ad_title_creative_btn_layout"/>
+</RelativeLayout>

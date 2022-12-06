@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/Relative_top" android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentTop="true">
+        <Button android:id="@+id/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_camera_setting" android:layout_width="220dp" android:layout_height="match_parent" android:text="公众号 CyPush" android:singleLine="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="@color/color_black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:text="1.关注公众号，查看视频教程"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:text="2.关注公众号，接收设备报警推送"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:text="3.关注公众号，查看设备使用常见问题"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:text="关注方式1：(点击查看大图)"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_showadd1_1" android:layout_width="300dp" android:layout_height="50dp" android:src="@mipmap/cypushser"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="180dp">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_showadd1_2" android:layout_width="0dp" android:layout_height="match_parent" android:src="@mipmap/scan_wxshow_a" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_showadd1_3" android:layout_width="0dp" android:layout_height="match_parent" android:src="@mipmap/scan_wxshow_b" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_showadd1_4" android:layout_width="0dp" android:layout_height="match_parent" android:src="@mipmap/scan_wxshow_c" android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textColor="@color/color_black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="关注方式2：(点击查看大图)"/> aa 
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_er" android:layout_width="80dp" android:layout_height="80dp" android:src="@mipmap/cypush"/>
+            <TextView android:textSize="10sp" android:textColor="@color/color_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="请保存并使用微信扫一扫识别 CPush 公众号二维码"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="180dp">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_showadd2_2" android:layout_width="0dp" android:layout_height="match_parent" android:src="@mipmap/scan_ss_a" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_showadd2_3" android:layout_width="0dp" android:layout_height="match_parent" android:src="@mipmap/scan_ss_b" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_showadd2_4" android:layout_width="0dp" android:layout_height="match_parent" android:src="@mipmap/scan_ss_c" android:layout_weight="1"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_scan" android:visibility="gone" android:layout_width="300dp" android:layout_height="wrap_content" android:src="@mipmap/scanwx"/>
+        </LinearLayout>
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/tvNext" android:background="@drawable/btn_blue_selector" android:layout_width="match_parent" android:layout_height="@dimen/n_blue_button_height" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="15dp" android:text="保存到相册并前往微信" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

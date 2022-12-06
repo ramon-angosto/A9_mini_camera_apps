@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/topView" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:id="@+id/Relative_top" android:background="@color/color_H_Main" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <com.shix.shixipc.view.MyTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_black" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@+id/textview_add_camera" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxWidth="120dp" android:text="@string/str_search" android:scrollHorizontally="true" android:singleLine="true" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever"/>
+        <Button android:textColor="#ffffff" android:id="@+id/done" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_refresh_style"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/listviewCamera" android:padding="1dp" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.4dp" android:fastScrollEnabled="true" android:fadeScrollbars="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/color_main" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvshow" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="111"/>
+    </FrameLayout>
+</LinearLayout>

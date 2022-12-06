@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/topView" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:id="@+id/Relative_top" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <com.shix.shixipc.view.MyTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@+id/textview_add_camera" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxWidth="120dp" android:text="Channel" android:scrollHorizontally="true" android:singleLine="true" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever"/>
+        <Button android:id="@+id/btn_four" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_four_style"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_add1" android:background="@drawable/listitem_add_pressed_selector" android:layout_width="@dimen/channel_bg_wd" android:layout_height="@dimen/channel_bg_h" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <Button android:id="@+id/buttonAdd1" android:background="@drawable/button_add_selector" android:layout_width="80dp" android:layout_height="80dp"/>
+            <TextView android:textColor="@color/color_qh_addtxt" android:id="@+id/textViewShow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Channel 1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_add2" android:background="@drawable/listitem_add_pressed_selector" android:visibility="invisible" android:layout_width="@dimen/channel_bg_wd" android:layout_height="@dimen/channel_bg_h" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <Button android:id="@+id/buttonAdd2" android:background="@drawable/button_add_selector" android:layout_width="80dp" android:layout_height="80dp"/>
+            <TextView android:textColor="@color/color_qh_addtxt" android:id="@+id/textViewShow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Channel 2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_add3" android:background="@drawable/listitem_add_pressed_selector" android:visibility="invisible" android:layout_width="@dimen/channel_bg_wd" android:layout_height="@dimen/channel_bg_h" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <Button android:id="@+id/buttonAdd3" android:background="@drawable/button_add_selector" android:layout_width="80dp" android:layout_height="80dp"/>
+            <TextView android:textColor="@color/color_qh_addtxt" android:id="@+id/textViewShow3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Channel 1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_add4" android:background="@drawable/listitem_add_pressed_selector" android:visibility="invisible" android:layout_width="@dimen/channel_bg_wd" android:layout_height="@dimen/channel_bg_h" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <Button android:id="@+id/buttonAdd4" android:background="@drawable/button_add_selector" android:layout_width="80dp" android:layout_height="80dp"/>
+            <TextView android:textColor="@color/color_qh_addtxt" android:id="@+id/textViewShow4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Channel 2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_add5" android:background="@drawable/listitem_add_pressed_selector" android:visibility="invisible" android:layout_width="@dimen/channel_bg_wd" android:layout_height="@dimen/channel_bg_h" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <Button android:id="@+id/buttonAdd5" android:background="@drawable/button_add_selector" android:layout_width="80dp" android:layout_height="80dp"/>
+            <TextView android:textColor="@color/color_qh_addtxt" android:id="@+id/textViewShow5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Channel 1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_add6" android:background="@drawable/listitem_add_pressed_selector" android:visibility="invisible" android:layout_width="@dimen/channel_bg_wd" android:layout_height="@dimen/channel_bg_h" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <Button android:id="@+id/buttonAdd6" android:background="@drawable/button_add_selector" android:layout_width="80dp" android:layout_height="80dp"/>
+            <TextView android:textColor="@color/color_qh_addtxt" android:id="@+id/textViewShow6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Channel 2"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

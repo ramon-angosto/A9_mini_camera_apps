@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/mbridge_reward_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/mbridge_videoview_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <FrameLayout android:id="@+id/mbridge_vfpv_fl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.mbridge.msdk.playercommon.PlayerView android:gravity="center" android:id="@+id/mbridge_vfpv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/mbridge_top_control" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_alignParentTop="true">
+        <com.mbridge.msdk.widget.FeedBackButton android:textSize="11sp" android:gravity="center" android:id="@+id/mbridge_native_endcard_feed_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="25dp" android:layout_marginLeft="10dp" android:text="@string/mbridge_cm_feedback_btn_text" android:layout_alignParentLeft="true" android:layout_marginStart="10dp" android:layout_alignParentStart="true"/>
+        <TextView android:textSize="11sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/mbridge_tv_count" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="10dp" android:layout_marginStart="10dp" android:layout_toEndOf="@+id/mbridge_native_endcard_feed_btn"/>
+        <ImageView android:layout_gravity="end" android:id="@+id/mbridge_rl_playing_close" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="10dp" android:src="@drawable/mbridge_reward_close" android:layout_alignParentRight="true" android:contentDescription="closeButton" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <com.mbridge.msdk.video.widget.SoundImageView android:layout_gravity="bottom" android:id="@+id/mbridge_sound_switch" android:background="@drawable/mbridge_reward_end_close_shape_oval" android:padding="6dp" android:visibility="visible" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_marginBottom="15dp" android:src="@drawable/mbridge_reward_sound_open" android:layout_alignParentBottom="true" android:layout_marginStart="10dp"/>
+</RelativeLayout>

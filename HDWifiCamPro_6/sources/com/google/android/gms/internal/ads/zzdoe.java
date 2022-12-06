@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@21.3.0 */
+public final /* synthetic */ class zzdoe implements Runnable {
+    public final /* synthetic */ zzdol zza;
+    public final /* synthetic */ zzdql zzb;
+
+    public /* synthetic */ zzdoe(zzdol zzdol, zzdql zzdql) {
+        this.zza = zzdol;
+        this.zzb = zzdql;
+    }
+
+    public final void run() {
+        this.zza.zzu(this.zzb);
+    }
+}

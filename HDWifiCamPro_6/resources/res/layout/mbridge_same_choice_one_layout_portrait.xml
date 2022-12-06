@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mbridge.msdk.video.dynview.widget.MBridgeFramLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/mbridge_choice_frl" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="center" android:id="@+id/mbridge_top_item_rl" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.mbridge.msdk.video.dynview.widget.MBRotationView android:id="@+id/mbridge_top_ration" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.mbridge.msdk.videocommon.view.RoundImageView android:id="@+id/mbridge_top_iv" android:layout_width="match_parent" android:layout_height="190dp" android:scaleType="fitXY" android:topLeftRadius="10dp" android:topRightRadius="10dp"/>
+            </com.mbridge.msdk.video.dynview.widget.MBRotationView>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignTop="@+id/mbridge_top_ration" android:layout_alignBottom="@+id/mbridge_top_ration">
+                <ImageView android:id="@+id/mbridge_top_play_bg" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/mbridge_icon_play_bg" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/mbridge_top_finger_bg" android:layout_width="60dp" android:layout_height="75dp" android:layout_marginLeft="20dp" android:layout_marginTop="18dp" android:src="@drawable/mbridge_finger_media_control" android:layout_alignLeft="@+id/mbridge_top_play_bg" android:layout_alignTop="@+id/mbridge_top_play_bg"/>
+                <ImageView android:layout_width="match_parent" android:layout_height="45dp" android:src="@drawable/mbridge_bottom_media_control" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/mbridge_top_title_tv" android:background="@drawable/mbridge_reward_shape_choice" android:paddingLeft="45dp" android:layout_width="match_parent" android:layout_height="45dp" android:lines="1" android:layout_below="@+id/mbridge_top_ration"/>
+            <com.mbridge.msdk.videocommon.view.RoundImageView android:id="@+id/mbridge_top_icon_iv" android:layout_width="35dp" android:layout_height="35dp" android:layout_margin="5dp" android:scaleType="centerCrop" android:layout_below="@+id/mbridge_top_ration"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/mbridge_bottom_item_rl" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="55dp" android:layout_weight="1">
+            <com.mbridge.msdk.video.dynview.widget.MBRotationView android:id="@+id/mbridge_bottom_ration" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.mbridge.msdk.videocommon.view.RoundImageView android:id="@+id/mbridge_bottom_iv" android:layout_width="match_parent" android:layout_height="190dp" android:scaleType="fitXY"/>
+            </com.mbridge.msdk.video.dynview.widget.MBRotationView>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignTop="@+id/mbridge_bottom_ration" android:layout_alignBottom="@+id/mbridge_bottom_ration">
+                <ImageView android:id="@+id/mbridge_bottom_play_bg" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/mbridge_icon_play_bg" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/mbridge_bottom_finger_bg" android:layout_width="60dp" android:layout_height="75dp" android:layout_marginLeft="20dp" android:layout_marginTop="18dp" android:src="@drawable/mbridge_finger_media_control" android:layout_alignLeft="@+id/mbridge_bottom_play_bg" android:layout_alignTop="@+id/mbridge_bottom_play_bg"/>
+                <ImageView android:layout_width="match_parent" android:layout_height="45dp" android:src="@drawable/mbridge_bottom_media_control" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/mbridge_bottom_title_tv" android:background="@drawable/mbridge_reward_shape_choice" android:paddingLeft="45dp" android:layout_width="match_parent" android:layout_height="45dp" android:lines="1" android:layout_below="@+id/mbridge_bottom_ration"/>
+            <com.mbridge.msdk.videocommon.view.RoundImageView android:id="@+id/mbridge_bottom_icon_iv" android:layout_width="35dp" android:layout_height="35dp" android:layout_margin="5dp" android:scaleType="centerCrop" android:layout_below="@+id/mbridge_bottom_ration"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@+id/mbridge_reward_choice_one_like_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30dp" android:src="@drawable/mbridge_choice_video_title"/>
+    </FrameLayout>
+    <TextView android:textSize="11sp" android:gravity="center" android:layout_gravity="right" android:id="@+id/mbridge_choice_one_countdown_tv" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="25dp" android:layout_margin="10dp"/>
+</com.mbridge.msdk.video.dynview.widget.MBridgeFramLayout>

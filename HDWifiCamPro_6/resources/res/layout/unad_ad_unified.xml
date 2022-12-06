@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.UnifiedNativeAdView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+        <TextView style="@style/AppTheme.unad_AdAttribution"/>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20dp" android:paddingTop="3dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/ad_app_icon" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="40dp" android:layout_height="40dp" android:adjustViewBounds="true" android:paddingEnd="5dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#0000ff" android:id="@+id/ad_headline" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="bold" android:gravity="bottom" android:id="@+id/ad_advertiser" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                        <RatingBar android:id="@+id/ad_stars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" style="?android:attr/ratingBarStyleSmall"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:id="@+id/ad_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginEnd="20dp"/>
+                <com.google.android.gms.ads.formats.MediaView android:layout_gravity="center_horizontal" android:id="@+id/ad_media" android:layout_width="match_parent" android:layout_height="175dp" android:layout_marginTop="5dp"/>
+                <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:id="@+id/ad_price" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+                    <TextView android:textSize="12sp" android:id="@+id/ad_store" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+                    <Button android:textSize="12sp" android:gravity="center" android:id="@+id/ad_call_to_action" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.gms.ads.formats.UnifiedNativeAdView>

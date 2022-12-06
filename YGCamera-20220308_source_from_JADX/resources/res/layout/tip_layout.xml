@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/view_center" android:layout_width="1dp" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:src="@drawable/ic_drag_right" android:layout_alignRight="@+id/view_center" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_tip_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_last_day" android:layout_alignRight="@+id/iv_left" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_tip_left_landscape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_last_day_landscape" android:layout_alignRight="@+id/iv_left" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_tip_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/ic_next_day" android:layout_alignLeft="@+id/iv_right" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_tip_right_landscape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/ic_next_day_landscape" android:layout_alignLeft="@+id/iv_right" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:src="@drawable/ic_drag_left" android:layout_alignLeft="@+id/view_center" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

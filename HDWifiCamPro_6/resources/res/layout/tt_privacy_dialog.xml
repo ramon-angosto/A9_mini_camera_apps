@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bytedance.sdk.openadsdk.core.widget.TTCornersWebView android:id="@+id/tt_privacy_webview" android:background="@drawable/tt_privacy_webview_bg" android:layout_width="match_parent" android:layout_height="235dp"/>
+        <RelativeLayout android:id="@+id/tt_privacy_back_layout" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/tt_privacy_back" android:layout_width="6.75dp" android:layout_height="13dp" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:src="@drawable/tt_privacy_back_icon"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button android:textSize="17sp" android:textColor="@android:color/white" android:id="@+id/tt_privacy_accept_btn" android:background="@drawable/tt_privacy_btn_bg" android:layout_width="match_parent" android:layout_height="43dp" android:layout_marginLeft="23dp" android:layout_marginTop="20dp" android:layout_marginRight="23dp" android:text="@string/yes_i_agree" android:textAllCaps="false"/>
+    <TextView android:textSize="15sp" android:textColor="#12a0f4" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tt_privacy_reject_btn" android:layout_width="105dp" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:text="@string/no_thank_you"/>
+    <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tt_privacy_introduce_msg" android:layout_width="263dp" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_marginBottom="32dp" android:text="I understand that I will still see ads，but they may not be as relevant to my interests."/>
+</LinearLayout>

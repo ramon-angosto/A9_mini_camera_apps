@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_border_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="15sp" android:textColor="@color/z6" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_device_danale_dialog_more_title" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/im_close" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@mipmap/n_play_more_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="28dp" android:paddingRight="28dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <TextView android:textSize="14sp" android:textColor="@color/z9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/add_device_danale_dialog_more" android:lineSpacingMultiplier="1.5"/>
+            </LinearLayout>
+            <View android:background="@color/line_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/text_color_back" android:gravity="center" android:id="@+id/tvConfirm" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/biz_add_creat"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

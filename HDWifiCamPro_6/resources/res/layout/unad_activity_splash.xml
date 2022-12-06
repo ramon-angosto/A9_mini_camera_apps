@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/oneshot_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="400px" android:layout_marginRight="10dp"/>
+    <RelativeLayout android:id="@+id/splash_main" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_bottom" android:layout_width="match_parent" android:layout_height="100dp" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/app_logo" android:layout_width="60dp" android:layout_height="100dp" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/splash_holder" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_above="@+id/layout_bottom"/>
+        <FrameLayout android:id="@+id/splash_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="80dp" android:layout_above="@+id/layout_bottom"/>
+        <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/skip_view" android:background="@drawable/unad_background_circle" android:visibility="gone" android:layout_width="96dp" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="skip" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/preload_view" android:background="@drawable/unad_background_circle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="已Wi-Fi预加载" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/splash_load_ad_only" android:background="#ffffff" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:id="@+id/splash_load_ad_close" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="关闭"/>
+        <Button android:id="@+id/splash_load_ad_refresh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="刷新"/>
+        <Button android:id="@+id/splash_load_ad_display" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="显示广告"/>
+        <TextView android:id="@+id/splash_load_ad_status" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="当前状态"/>
+    </LinearLayout>
+</FrameLayout>

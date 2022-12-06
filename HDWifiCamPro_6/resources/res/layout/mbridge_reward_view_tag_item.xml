@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/item" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.mbridge.msdk.videocommon.view.RoundImageView android:id="@+id/mbridge_tag_icon" android:layout_width="8dp" android:layout_height="8dp"/>
+    <TextView android:textSize="2sp" android:textStyle="bold" android:ellipsize="end" android:gravity="center" android:id="@+id/mbridge_tag_title" android:layout_width="8dp" android:layout_height="wrap_content" android:lines="1"/>
+</LinearLayout>

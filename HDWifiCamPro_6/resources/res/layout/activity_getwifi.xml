@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:id="@+id/Relative_top" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <com.shix.shixipc.view.MyTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_white" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@+id/textview_add_camera" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxWidth="120dp" android:text="@string/add_camera" android:scrollHorizontally="true" android:singleLine="true" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="1" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever"/>
+        <ImageButton android:background="#00000000" android:padding="5dp" android:visibility="invisible" android:layout_width="35dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:src="@mipmap/qh_scan" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/ivDevice" android:layout_width="wrap_content" android:layout_height="80dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@mipmap/shixlyq" android:scaleType="centerInside"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/background_listbg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+            <TextView android:textSize="14sp" android:textColor="@color/color_black" android:layout_width="80dp" android:layout_height="wrap_content" android:text="@string/add_camera_wifi_ssid"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_border1" android:layout_width="match_parent" android:layout_height="45dp">
+                <EditText android:textSize="15sp" android:gravity="center_vertical" android:id="@+id/edit_wify_name" android:background="#00000000" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="35dp" android:hint="@string/add_device_danale_wifi_ssid" android:maxLines="1" android:maxLength="30" android:layout_weight="1"/>
+                <ImageView android:id="@+id/btn_wifi_r" android:padding="10dp" android:layout_width="43dp" android:layout_height="43dp" android:src="@mipmap/shixrefreshx"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp">
+            <TextView android:textSize="14sp" android:textColor="@color/color_black" android:layout_width="80dp" android:layout_height="wrap_content" android:text="@string/add_camera_wifi_pwd"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_border1" android:layout_width="match_parent" android:layout_height="45dp">
+                <EditText android:textSize="15sp" android:gravity="center_vertical" android:id="@+id/edit_wify_pass" android:background="#00000000" android:paddingLeft="7dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="35dp" android:hint="@string/add_device_danale_wifi_pass" android:maxLines="1" android:maxLength="30" android:layout_weight="1" android:inputType="textPassword"/>
+                <ImageView android:id="@+id/edit_wify_pass_eye" android:padding="10dp" android:layout_width="43dp" android:layout_height="43dp" android:src="@mipmap/btn_eye"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="13sp" android:textColor="@color/z4" android:gravity="center" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="@string/add_device_danale_wifi1_1"/>
+    <TextView android:textSize="11sp" android:textColor="@color/z4" android:gravity="left" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/add_device_danale_wifi_introduction"/>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/btn_next" android:background="@drawable/btn_blue_selector" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:layout_marginBottom="15dp" android:text="@string/add_device_danale_next"/>
+    </LinearLayout>
+</LinearLayout>

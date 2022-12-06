@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@mipmap/qh_allbg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/Relative_top" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/button_back_style1"/>
+        <EditText android:textSize="18sp" android:gravity="center" android:id="@+id/tv_name" android:layout_width="220dp" android:layout_height="match_parent" android:text="120.78.197.81:80" android:singleLine="true" android:layout_centerHorizontal="true"/>
+        <Button android:id="@+id/pushOther" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/button_done_style"/>
+    </RelativeLayout>
+    <TextView android:textColor="#000000" android:gravity="center" android:id="@+id/textView3" android:layout_width="match_parent" android:layout_height="130dp" android:text="公司局域网ID和端口192.168.1.89:8081" android:textIsSelectable="true"/>
+    <EditText android:gravity="center" android:id="@+id/editText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DBG-748529-WVDFT" android:ems="30" android:inputType="textPersonName"/>
+    <EditText android:gravity="center" android:id="@+id/editText1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="FTJ" android:ems="5" android:inputType="textPersonName"/>
+    <EditText android:gravity="center" android:id="@+id/editText2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="门口设备" android:ems="30" android:inputType="textPersonName"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/tvNext0" android:background="@drawable/btn_blue_selector" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:text="获取宸云token"/>
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/tvNext" android:background="@drawable/btn_blue_selector" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:text="小米注册模拟"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/tvNext6" android:background="@drawable/btn_blue_selector" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:text="上传图片测试" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/tvNext7" android:background="@drawable/btn_blue_selector" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:text="华为注册模拟"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/tvNext1" android:background="@drawable/btn_blue_selector" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:text="模拟设备推送信息"/>
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/tvNext2" android:background="@drawable/btn_blue_selector" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:text="更改手机唯一标识"/>
+    </LinearLayout>
+</LinearLayout>

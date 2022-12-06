@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mbridge.msdk.video.bt.module.MBridgeBTContainer android:id="@+id/mbridge_bt_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.mbridge.msdk.video.bt.module.MBTempContainer android:id="@+id/mbridge_temp_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

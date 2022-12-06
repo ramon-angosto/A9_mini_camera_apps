@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="#fff" android:layout_width="match_parent" android:layout_height="55dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/webview_back" android:tag="@string/bigo_ad_tag_back" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="40dp" android:layout_height="24dp" android:src="@drawable/bigo_ad_ic_back_gray" android:scaleType="fitXY" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/webview_close" android:tag="@string/bigo_ad_tag_close" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="40dp" android:layout_height="24dp" android:src="@drawable/bigo_ad_ic_close_gray" android:scaleType="fitXY" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        <TextView android:textSize="20sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/webview_title" android:tag="@string/bigo_ad_tag_title" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1" android:paddingStart="10dp"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/webview_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:id="@+id/webview_progress_bar" android:tag="@string/bigo_ad_tag_progressbar" android:padding="0dp" android:layout_width="match_parent" android:layout_height="5dp" android:max="100" android:alpha="0" style="?android:attr/progressBarStyleHorizontal"/>
+    </FrameLayout>
+</LinearLayout>
